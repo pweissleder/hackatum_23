@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B8957C32B08163000C9B6FE /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957C22B08163000C9B6FE /* Recipe.swift */; };
-		0B8957C72B0816FF00C9B6FE /* mockedRecipes.js in Resources */ = {isa = PBXBuildFile; fileRef = 0B8957C62B0816FF00C9B6FE /* mockedRecipes.js */; };
 		0B8957C92B081A9C00C9B6FE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957C82B081A9C00C9B6FE /* Preferences.swift */; };
-		0B8957CC2B083C2200C9B6FE /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8957CB2B083C2200C9B6FE /* recipes.json */; };
 		0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8957CD2B08415E00C9B6FE /* tenRecipes.json */; };
 		0B8957D12B08C30200C9B6FE /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957D02B08C30200C9B6FE /* DataViewModel.swift */; };
 		B7E93FA12B0812AD00430F57 /* TailoredTasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */; };
@@ -34,13 +32,12 @@
 		B7E93FF92B09071100430F57 /* pasta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF82B09071100430F57 /* pasta.mp4 */; };
 		B7E93FFB2B091C9F00430F57 /* sushi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFA2B091C9F00430F57 /* sushi.mp4 */; };
 		B7E93FFD2B091E6800430F57 /* erdnusssosse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFC2B091E6800430F57 /* erdnusssosse.mp4 */; };
+		B7E93FFF2B0921E500430F57 /* tofuwrap.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B8957C22B08163000C9B6FE /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
-		0B8957C62B0816FF00C9B6FE /* mockedRecipes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mockedRecipes.js; sourceTree = "<group>"; };
 		0B8957C82B081A9C00C9B6FE /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
-		0B8957CB2B083C2200C9B6FE /* recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		0B8957CD2B08415E00C9B6FE /* tenRecipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tenRecipes.json; sourceTree = "<group>"; };
 		0B8957D02B08C30200C9B6FE /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
 		B7E93F9D2B0812AD00430F57 /* TailoredTaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TailoredTaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +63,7 @@
 		B7E93FF82B09071100430F57 /* pasta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pasta.mp4; sourceTree = "<group>"; };
 		B7E93FFA2B091C9F00430F57 /* sushi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sushi.mp4; sourceTree = "<group>"; };
 		B7E93FFC2B091E6800430F57 /* erdnusssosse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = erdnusssosse.mp4; sourceTree = "<group>"; };
+		B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tofuwrap.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +97,6 @@
 		0B8957C52B0816D800C9B6FE /* MockData */ = {
 			isa = PBXGroup;
 			children = (
-				0B8957C62B0816FF00C9B6FE /* mockedRecipes.js */,
-				0B8957CB2B083C2200C9B6FE /* recipes.json */,
 				0B8957CD2B08415E00C9B6FE /* tenRecipes.json */,
 			);
 			path = MockData;
@@ -152,6 +148,7 @@
 				B7E93FF62B08F66E00430F57 /* Wunder.mp4 */,
 				B7E93FFA2B091C9F00430F57 /* sushi.mp4 */,
 				B7E93FFC2B091E6800430F57 /* erdnusssosse.mp4 */,
+				B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */,
 				B7E93FA62B0812AF00430F57 /* TailoredTaste.entitlements */,
 				B7E93FA72B0812AF00430F57 /* Preview Content */,
 			);
@@ -239,12 +236,11 @@
 				B7E93FA92B0812AF00430F57 /* Preview Assets.xcassets in Resources */,
 				B7E93FFB2B091C9F00430F57 /* sushi.mp4 in Resources */,
 				B7E93FA52B0812AF00430F57 /* Assets.xcassets in Resources */,
-				0B8957C72B0816FF00C9B6FE /* mockedRecipes.js in Resources */,
 				0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */,
 				B7E93FF72B08F66E00430F57 /* Wunder.mp4 in Resources */,
-				0B8957CC2B083C2200C9B6FE /* recipes.json in Resources */,
 				B7E93FF92B09071100430F57 /* pasta.mp4 in Resources */,
 				B7E93FFD2B091E6800430F57 /* erdnusssosse.mp4 in Resources */,
+				B7E93FFF2B0921E500430F57 /* tofuwrap.mp4 in Resources */,
 				B7E93FF32B08ECE100430F57 /* Kartoffelschalen Chips.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

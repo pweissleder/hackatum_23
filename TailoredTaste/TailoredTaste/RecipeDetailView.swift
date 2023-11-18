@@ -22,6 +22,26 @@ struct RecipeDetailView: View {
                     .font(.system(.title, design: .default))
                         .foregroundColor(Color.black)
                         .padding(5)
+                
+                
+                VStack(alignment: .leading) {
+                    ForEach(recipe.extendedIngredients, id: \.id) { ingredient in
+                        HStack {
+                            AsyncImage(url: URL(string: "https://spoonacular.com/cdn/ingredients_100x100/" + ingredient.image)) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50, height: 50)
+                            } placeholder: {
+                                Image("placeholder")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50, height: 50)
+                            }
+                            Text(ingredient.original)
+                        }
+                    }
+                }
                 HStack{
                     ForEach(0..<Int((recipe.spoonacularScore/20).rounded())) { _ in
                         Image(systemName: "star.fill")
@@ -72,7 +92,5 @@ struct RecipeDetailView: View {
                 }
             }
         }
-        .ignoresSafeArea(.all)
-        
     }
 }

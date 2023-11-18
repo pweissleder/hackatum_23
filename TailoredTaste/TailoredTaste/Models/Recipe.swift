@@ -5,8 +5,8 @@ struct Recipes: Codable {
 }
 
 struct Recipe: Codable, Identifiable {
-    let isFavourite: Bool?
-    let cookingEvents: [Date]?
+    var isFavourite: Bool?
+    var cookingEvents: [Date]?
     let vegetarian: Bool
     let vegan: Bool
     let glutenFree: Bool

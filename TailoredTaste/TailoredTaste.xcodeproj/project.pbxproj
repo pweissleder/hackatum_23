@@ -27,8 +27,6 @@
 		B7E93FED2B08CB8B00430F57 /* NutritionalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */; };
 		B7E93FEE2B08CB8B00430F57 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */; };
 		B7E93FF02B08D5F500430F57 /* IngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEF2B08D5F500430F57 /* IngredientView.swift */; };
-		F07AF9462B091CB2006F3318 /* HealthKitOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */; };
-		F07AF9482B0924E0006F3318 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9472B0924E0006F3318 /* Nutrition.swift */; };
 		B7E93FF32B08ECE100430F57 /* Kartoffelschalen Chips.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */; };
 		B7E93FF52B08ED3D00430F57 /* RecipeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FF42B08ED3D00430F57 /* RecipeImage.swift */; };
 		B7E93FF72B08F66E00430F57 /* Wunder.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF62B08F66E00430F57 /* Wunder.mp4 */; };
@@ -37,6 +35,9 @@
 		B7E93FFD2B091E6800430F57 /* erdnusssosse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFC2B091E6800430F57 /* erdnusssosse.mp4 */; };
 		B7E93FFF2B0921E500430F57 /* tofuwrap.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */; };
 		BD22C3FF2B09299A00DA8BEE /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22C3FE2B09299A00DA8BEE /* LabelView.swift */; };
+		F06C922D2B094E5C00943521 /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C922C2B094E5C00943521 /* Diet.swift */; };
+		F07AF9462B091CB2006F3318 /* HealthKitOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */; };
+		F07AF9482B0924E0006F3318 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9472B0924E0006F3318 /* Nutrition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +64,6 @@
 		B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionalItemView.swift; sourceTree = "<group>"; };
 		B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		B7E93FEF2B08D5F500430F57 /* IngredientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientView.swift; sourceTree = "<group>"; };
-		F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitOnboarding.swift; sourceTree = "<group>"; };
-		F07AF9472B0924E0006F3318 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 		B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kartoffelschalen Chips.mp4"; sourceTree = "<group>"; };
 		B7E93FF42B08ED3D00430F57 /* RecipeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImage.swift; sourceTree = "<group>"; };
 		B7E93FF62B08F66E00430F57 /* Wunder.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wunder.mp4; sourceTree = "<group>"; };
@@ -73,6 +72,9 @@
 		B7E93FFC2B091E6800430F57 /* erdnusssosse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = erdnusssosse.mp4; sourceTree = "<group>"; };
 		B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tofuwrap.mp4; sourceTree = "<group>"; };
 		BD22C3FE2B09299A00DA8BEE /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		F06C922C2B094E5C00943521 /* Diet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diet.swift; sourceTree = "<group>"; };
+		F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitOnboarding.swift; sourceTree = "<group>"; };
+		F07AF9472B0924E0006F3318 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				0B8957C22B08163000C9B6FE /* Recipe.swift */,
 				0B8957C82B081A9C00C9B6FE /* Preferences.swift */,
 				F07AF9472B0924E0006F3318 /* Nutrition.swift */,
+				F06C922C2B094E5C00943521 /* Diet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				B7E93FB32B08132D00430F57 /* PlayerView.swift in Sources */,
 				0B8957D32B08E60C00C9B6FE /* HealthKitService.swift in Sources */,
 				B7E93FE12B082FE000430F57 /* Feed.swift in Sources */,
+				F06C922D2B094E5C00943521 /* Diet.swift in Sources */,
 				B7E93FB52B08132D00430F57 /* PlayerScrollView.swift in Sources */,
 				B7E93FEE2B08CB8B00430F57 /* RecipeDetailView.swift in Sources */,
 				B7E93FF52B08ED3D00430F57 /* RecipeImage.swift in Sources */,

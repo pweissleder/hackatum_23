@@ -6,7 +6,7 @@ public class DataViewModel: ObservableObject {
     
     static let shared = DataViewModel()
     
-    @Published var preferences: Preferences = Preferences(isCheatDay: false, vegetarian: false, vegan: false, glutenFree: false, dairyFree: false, peanutFree: true, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
+    @Published var preferences: Preferences = Preferences(isCheatDay: false, vegetarian: false, vegan: false, pescetarian: true, glutenFree: false, dairyFree: false, peanutFree: true, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
     @Published var recipes: [Recipe] = []
     
     @Published var filteredRecipes: [Recipe] = []
@@ -14,7 +14,6 @@ public class DataViewModel: ObservableObject {
     
     init() {
         recipes = getRecipes()
-        preferences = initPreferences()
         updateFavouriteRecipes()
     }
     
@@ -43,10 +42,6 @@ public class DataViewModel: ObservableObject {
             print("Could not locate the JSON file.")
         }
         return []
-    }
-    
-    func initPreferences() -> Preferences {
-        return Preferences(isCheatDay: false, vegetarian: false, vegan: false, glutenFree: false, dairyFree: false, peanutFree: false, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
     }
     
     func updateFavouriteRecipes() -> Void {
@@ -103,5 +98,26 @@ public class DataViewModel: ObservableObject {
         let rIndex = recipes.firstIndex(where: {$0.id == id})!
         recipes[rIndex].isFavourite = false
         updateFavouriteRecipes()
+    }
+    
+    func updateDiet(diet: DietEnum) {
+        switch diet {
+            case .carnivore:
+                preferences.vegan = true
+                preferences.vegetarian = true
+                preferences.pescetarian = true
+            case .pescetarian:
+                preferences.vegan = true
+                preferences.vegetarian = true
+                preferences.pescetarian = true
+            case .vegetarian:
+                preferences.vegan = true
+                preferences.vegetarian = true
+                preferences.pescetarian = false
+            case .vegan:
+                preferences.vegan = true
+                preferences.vegetarian = false
+                preferences.pescetarian = false
+            }
     }
 }

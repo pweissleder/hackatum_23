@@ -21,7 +21,7 @@ class HealthKitService {
     }
     
     
-    func requestPermission() -> Bool {
+    func requestPermission() -> Void {
         let writeDataTypes: Set<HKQuantityType> = Set([HKQuantityType.quantityType(forIdentifier: .dietaryProtein)!,
                                                   HKQuantityType.quantityType(forIdentifier: .dietaryFatTotal)!,
                                                   HKQuantityType.quantityType(forIdentifier: .dietaryFatSaturated)!,
@@ -36,11 +36,12 @@ class HealthKitService {
                     fatalError("*** An error occurred while requesting authorization: \(error!.localizedDescription) ***")
                 }
             }
-            return true
     }
     
     
-    func fetchAllergies() -> [HKClinicalRecord] {
+    func fetchData() -> Void {
+            requestPermission()
+        
         print("start fetching allergies")
         let allergyType = HKObjectType.clinicalType(forIdentifier: .allergyRecord)!
         
@@ -103,7 +104,6 @@ class HealthKitService {
             
         healthStore.execute(activityQuery)
         healthStore.execute(allergyQuery)
-        return []
     }
     
     func exportNutritionData(nutrition: Nutrition) {

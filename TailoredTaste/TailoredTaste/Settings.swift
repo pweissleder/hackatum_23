@@ -9,23 +9,75 @@ import SwiftUI
 
 struct Settings: View {
     let shared = HealthKitService()
-    @State var textda : Bool = true
     var body: some View {
         VStack {
-            Text("Settings").onAppear {
-                print("Peanut: \(DataViewModel.shared.preferences.peanutFree)\n healthy: \(DataViewModel.shared.preferences.veryHealthy)")
-            }
-            Button("Request Permission") {
-                shared.requestPermission()
-            }
-            Button("fetch data") {
-                shared.fetchAllergies()
-                print("Peanut: \(DataViewModel.shared.preferences.peanutFree)\n healthy: \(DataViewModel.shared.preferences.veryHealthy)")
-            }
-            Text("assad").opacity(DataViewModel.shared.preferences.veryHealthy ? 1.0 : 0.1)
+            NavigationView {
+                      List {
+                          Section("Diet") {
+                              Diet()
+                          }
+                          NavigationLink(destination: Allergies()) {
+                              Text("I don't eat that")
+                          }
+                          NavigationLink(destination: Allergies()) {
+                              Text("Cuisines")
+                          }
+                          Button("Import Apple Health data") {
+                              shared.fetchData()
+                          }
+                      }
+                      .navigationBarTitle("Settings")
+                  }
+        }
+    }
+}
+
+struct Allergies: View {
+    var body: some View {
+        Text("Allergies")
+    }
+}
+
+@ViewBuilder func gridEntry(diet: DietEnum) -> some View {
+    var icon: String {
+        switch diet {
+        case .carnivore:
+            "figure.stand"
+        case .pescetarian:
+            "fish"
+        case .vegetarian:
+            "drop.fill"
+        case .vegan:
+            "leaf"
+        }
+    }
+    Button {
+        DataViewModel.shared.updateDiet(diet: diet)
+    } label: {
+        ZStack {
+            
+            RoundedRectangle(cornerSize:
+                                CGSize(width: 10, height: 20))
+            .foregroundColor(.white)
+            .shadow(radius: 5)
+            Image(systemName: icon)
+                .font(.system(size: 50))
+               
         }
         
-        
+    }
+    
+}
+
+
+struct Diet: View {
+    var body: some View {
+        LazyVGrid (columns: [.init(), .init()]) {
+            gridEntry(diet: .carnivore)
+            gridEntry(diet: .pescetarian)
+            gridEntry(diet: .vegetarian)
+            gridEntry(diet: .vegan)
+        }
     }
 }
 

@@ -11,6 +11,7 @@ struct Recipe: Codable, Identifiable, Equatable {
     var cookingEvents: [Date]?
     let vegetarian: Bool
     let vegan: Bool
+    let pescetarian: Bool?
     let glutenFree: Bool
     let dairyFree: Bool
     var peanutFree: Bool?

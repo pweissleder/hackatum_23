@@ -12,12 +12,10 @@ struct Home: View {
     
     @ObservedObject var dataViewModel = DataViewModel.shared
     
-    let columns: [GridItem] = [.init(), .init()]
-
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: columns) {
+                LazyVGrid(columns: [.init(), .init()]) {
                     ForEach(dataViewModel.favouriteRecipes) { recipe in
                         NavigationLink {
                             RecipeDetailView(recipe: recipe)

@@ -13,4 +13,3 @@ struct HealthKitOnboarding: View {
         
     }
 }
-

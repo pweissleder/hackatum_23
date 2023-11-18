@@ -28,6 +28,7 @@ struct Home: View {
                 }
             }
             .navigationBarTitleDisplayMode(.large)
+            .navigationTitle("Sushi Delight")
         }
         
     }

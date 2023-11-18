@@ -23,7 +23,7 @@ struct RecipeDetailView: View {
                     LabelView(image: "leaf")
                 }
             }.background(
-                RecipeImage(recipe: recipe, size: 500
+                RecipeImage(recipe: recipe, size: 500)
             )
             
             ScrollView {
@@ -116,12 +116,11 @@ struct RecipeDetailView: View {
                             //Instructions
                             
                             Text(recipe.instructions)
-                            
                         }
                     }
                 }
-                .ignoresSafeArea(.all)
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

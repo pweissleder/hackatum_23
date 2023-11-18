@@ -35,6 +35,7 @@
 		B7E93FFF2B0921E500430F57 /* tofuwrap.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */; };
 		BD22C3FF2B09299A00DA8BEE /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22C3FE2B09299A00DA8BEE /* LabelView.swift */; };
 		BDC2A79C2B095B4700778A53 /* erdnusssosse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDC2A79B2B095B4700778A53 /* erdnusssosse.mp4 */; };
+		BDC2A79E2B09614000778A53 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2A79D2B09614000778A53 /* ProgressBarView.swift */; };
 		F07AF9462B091CB2006F3318 /* HealthKitOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */; };
 		F07AF9482B0924E0006F3318 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9472B0924E0006F3318 /* Nutrition.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tofuwrap.mp4; sourceTree = "<group>"; };
 		BD22C3FE2B09299A00DA8BEE /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		BDC2A79B2B095B4700778A53 /* erdnusssosse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = erdnusssosse.mp4; sourceTree = "<group>"; };
+		BDC2A79D2B09614000778A53 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitOnboarding.swift; sourceTree = "<group>"; };
 		F07AF9472B0924E0006F3318 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 				B7E93FF42B08ED3D00430F57 /* RecipeImage.swift */,
 				B7E93FE92B08BF4100430F57 /* RecipePreviewView.swift */,
 				BD22C3FE2B09299A00DA8BEE /* LabelView.swift */,
+				BDC2A79D2B09614000778A53 /* ProgressBarView.swift */,
 				B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */,
 				B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */,
 				B7E93FEF2B08D5F500430F57 /* IngredientView.swift */,
@@ -279,6 +282,7 @@
 				B7E93FB72B08150000430F57 /* Video.swift in Sources */,
 				B7E93FF02B08D5F500430F57 /* IngredientView.swift in Sources */,
 				B7E93FED2B08CB8B00430F57 /* NutritionalItemView.swift in Sources */,
+				BDC2A79E2B09614000778A53 /* ProgressBarView.swift in Sources */,
 				B7E93FB32B08132D00430F57 /* PlayerView.swift in Sources */,
 				0B8957D32B08E60C00C9B6FE /* HealthKitService.swift in Sources */,
 				B7E93FE12B082FE000430F57 /* Feed.swift in Sources */,

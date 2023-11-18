@@ -28,7 +28,7 @@ struct Home: View {
             }
             .padding(10)
             .navigationBarTitleDisplayMode(.large)
-            .navigationTitle("Hello Bene 👋")
+            .navigationTitle("Back")
         }
         
     }

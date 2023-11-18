@@ -14,13 +14,13 @@ struct PlayerScrollView: UIViewRepresentable {
         return PlayerScrollView.Coordinator(parent: self)
     }
     
-    @Binding var data : [Video]
+    @Binding var data : [PlayableRecipe]
     
     func makeUIView(context: Context) -> UIScrollView {
         
         let view = UIScrollView()
         
-        let childView = UIHostingController(rootView: PlayerView(data: self.$data))
+        let childView = UIHostingController(rootView: PlayerView(playableRecipes: self.$data))
         childView.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat(data.count))
         
         view.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat(data.count))

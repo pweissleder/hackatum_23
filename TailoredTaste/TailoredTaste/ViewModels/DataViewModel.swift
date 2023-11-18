@@ -1,13 +1,16 @@
 import Foundation
 import SwiftUI
-
+import AVKit
 
 public class DataViewModel: ObservableObject {
+    
+    static let shared = DataViewModel()
+    
     @Published var preferences: Preferences = Preferences(isCheatDay: false, vegetarian: false, vegan: false, glutenFree: false, dairyFree: false, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
     @Published var recipes: [Recipe] = []
     
-    var filteredRecipes: [Recipe] = []
-    var favouriteRecipes: [Recipe] = []
+    @Published var filteredRecipes: [Recipe] = []
+    @Published var favouriteRecipes: [Recipe] = []
     
     init() {
         recipes = getRecipes()
@@ -24,9 +27,8 @@ public class DataViewModel: ObservableObject {
                 
                 // Decode JSON data into the Recipe structure
                 let decoder = JSONDecoder()
-                let recipes = try decoder.decode(Recipes.self, from: jsonData)
+                var recipes = try decoder.decode(Recipes.self, from: jsonData)
                 
-                // Now 'recipe' contains the parsed data
                 
                 print("JsonDecoder: Imported  \(recipes.recipes.count) recipes.")
                 return recipes.recipes

@@ -8,47 +8,84 @@
 
 import Foundation
 import SwiftUI
+import AVKit
 
 struct PlayerView: View {
     
-    @Binding var data: [Video]
+    @Binding var playableRecipes: [PlayableRecipe]
+    
+    @ObservedObject var dataViewModel = DataViewModel.shared
+    
+    @State var displayRecipeDetail: Bool = false
     
     var body: some View{
         
         VStack(spacing: 0){
             
-            ForEach(0..<self.data.count){i in
+            ForEach(playableRecipes){ playableRecipe in
                 
                 ZStack{
                     
-                    Player(player: self.data[i].player)
+                    Player(player: playableRecipe.player)
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                     .offset(y: -5)
+                    .onAppear() {
+                        //playableRecipe.player.play()
+                    }
                     
-                    if self.data[i].replay{
+                    /*if playableRecipe.replay {
                         Button(action: {
-                            self.data[i].player.seek(to: .zero)
-                            self.data[i].player.play()
-                            self.data[i].replay = false
+                            playableRecipe.player.seek(to: .zero)
+                            playableRecipe.player.play()
+                            playableRecipe.replay = false
                         }){
                             Image(systemName: "goforward")
-                            .resizable()
-                            .frame(width: 55, height: 60)
+                                .resizable()
+                                .frame(width: 55, height: 60)
                                 .foregroundColor(.white)
+                            
                         }
+                    }*/
+                    
+                    
+                    HStack() {
+                        Spacer()
+                        VStack(spacing: 10) {
+                            if !dataViewModel.favouriteRecipes.contains(where: { $0.id == playableRecipe.id }) {
+                                Button {
+                                    DataViewModel.shared.addToFavourites(id: playableRecipe.id)
+                                } label: {
+                                    Image(systemName: "heart")
+                                        .font(.title)
+                                }
+                            } else {
+                                Button {
+                                    DataViewModel.shared.removeFromFavourites(id: playableRecipe.id)
+                                } label: {
+                                    Image(systemName: "heart.fill")
+                                        
+                                }
+                            }
+                            
+                            Button {
+                                displayRecipeDetail = true
+                            } label: {
+                                Image(systemName: "book")
+                            }
+                            .sheet(isPresented: $displayRecipeDetail) {
+                                RecipeDetailView(recipe: playableRecipe.recipe)
+                            }
+                        }
+                        .font(.title)
+                        
                     }
+                    
                 }
             }
         }
-        .onAppear{
-            self.data[0].player.play()
-            
-            self.data[0].player.actionAtItemEnd = .none
-            
-            NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.data[0].player.currentItem, queue: .main) { (_) in
-                
-                self.data[0].replay = true
-            }
+        .onAppear() {
+            playableRecipes.first?.player.play()
+            playableRecipes.first?.player.actionAtItemEnd = .none
         }
     }
 }

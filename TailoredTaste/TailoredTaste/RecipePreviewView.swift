@@ -13,23 +13,13 @@ struct RecipePreviewView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            AsyncImage(url: URL(string: recipe.image)) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 200)
-            } placeholder: {
-                Image("placeholder")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 200)
-            }
+            RecipeImage(recipe: recipe)
             Text(recipe.title).font(.headline)
                 .padding(5)
         }
-        .background(Color("lightGreen"))
+        .background(.white)
         .cornerRadius(12)
-        .shadow(radius: 4)
+        .shadow(radius: 3)
         .frame(width: 200)
     }
 }

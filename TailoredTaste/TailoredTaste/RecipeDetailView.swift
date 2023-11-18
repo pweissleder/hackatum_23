@@ -16,34 +16,6 @@ struct RecipeDetailView: View {
         
         ScrollView {
             VStack(){
-                ZStack {
-                    AsyncImage(url: URL(string: recipe.image)) { image in
-                        image
-                            .resizable()
-                            .scaledToFill()
-                    } placeholder: {
-                        Image("placeholder")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 200)
-                    }
-                    HStack {
-                        Spacer()
-                        Button{
-                            print("hello world")
-                        } label: {
-                            Image(systemName: "bookmark")
-                        }
-                    }
-                }
-                
-                
-                    HStack{
-                        Spacer()
-                        
-                        Text("Favorites")
-                        
-                    }
                 Text(recipe.title)
                     .font(.title)
                     .fontWeight(.semibold)
@@ -85,13 +57,13 @@ struct RecipeDetailView: View {
                 .padding(5)
                 
                 LazyVGrid(columns: [.init(), .init(), .init(), .init(), .init(), .init()]){
-                    NutritionalItemView(value: 400, name: "Calories", unitName: "g")
-                    NutritionalItemView(value: 400, name: "Fat", unitName: "g")
-                    NutritionalItemView(value: 400, name: "SatFat", unitName: "g")
-                    NutritionalItemView(value: 400, name: "Carbs", unitName: "g")
-                    NutritionalItemView(value: 400, name: "Fiber", unitName: "g")
-                    NutritionalItemView(value: 400, name: "Protein", unitName: "g")
-                    NutritionalItemView(value: 400, name: "Sugar", unitName: "g")
+                    NutritionalItemView(value: recipe.calories, name: "Calories", unitName: "kcal")
+                    NutritionalItemView(value: recipe.fat, name: "Fat", unitName: "g")
+                    NutritionalItemView(value: recipe.satFat, name: "SatFat", unitName: "g")
+                    NutritionalItemView(value: recipe.carbs, name: "Carbs", unitName: "g")
+                    NutritionalItemView(value: recipe.fiber, name: "Fiber", unitName: "g")
+                    NutritionalItemView(value: recipe.protein, name: "Protein", unitName: "g")
+                    NutritionalItemView(value: recipe.sugar, name: "Sugar", unitName: "g")
                 }
                 
                 //Instructions

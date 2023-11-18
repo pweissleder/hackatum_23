@@ -4,7 +4,7 @@ struct Recipes: Codable {
     let recipes: [Recipe]
 }
 
-struct Recipe: Codable, Identifiable {
+struct Recipe: Codable, Identifiable, Equatable {
     var thumbnailName: String?
     var videoName: String?
     var isFavourite: Bool?
@@ -55,6 +55,10 @@ struct Recipe: Codable, Identifiable {
     let fiber: Int
     let protein: Int
     let sugar: Int
+    
+    static func == (lhs: Recipe, rhs: Recipe) -> Bool {
+        lhs.id == rhs.id
+    }
 }
 
 struct Ingredient: Codable {
@@ -70,6 +74,8 @@ struct Ingredient: Codable {
     let unit: String
     let meta: [String]
     let measures: Measures
+    
+    
 }
 
 struct Measures: Codable {

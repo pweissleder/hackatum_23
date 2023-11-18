@@ -29,8 +29,9 @@ struct PlayerView: View {
                     Player(player: playableRecipe.player)
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                     .offset(y: -5)
-                    .onAppear() {
-                        //playableRecipe.player.play()
+                    .onTapGesture {
+                        playableRecipe.player.seek(to: .zero)
+                        playableRecipe.player.play()
                     }
                     
                     /*if playableRecipe.replay {

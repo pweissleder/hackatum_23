@@ -12,7 +12,7 @@ struct Home: View {
     
     @ObservedObject var dataViewModel = DataViewModel.shared
     
-    let columns: [GridItem] = [.init(.fixed(200)), .init(.fixed(200))]
+    let columns: [GridItem] = [.init(.fixed(180)), .init(.fixed(180))]
 
     var body: some View {
         NavigationView {

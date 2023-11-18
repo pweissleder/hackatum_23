@@ -20,6 +20,6 @@ struct RecipePreviewView: View {
         .background(.white)
         .cornerRadius(12)
         .shadow(radius: 3)
-        .frame(width: 200)
+        .frame(width: 180)
     }
 }

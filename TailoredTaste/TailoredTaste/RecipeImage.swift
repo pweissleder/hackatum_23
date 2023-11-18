@@ -17,7 +17,7 @@ struct RecipeImage: View {
         if let thumbnailName = recipe.thumbnailName {
             Image(thumbnailName)
                 .resizable()
-                .scaledToFit()
+                .scaledToFill()
                 .frame(width: size)
         } else {
             AsyncImage(url: URL(string: recipe.image)) { image in

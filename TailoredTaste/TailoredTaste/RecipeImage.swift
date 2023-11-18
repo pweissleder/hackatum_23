@@ -10,7 +10,8 @@ import SwiftUI
 struct RecipeImage: View {
     
     let recipe: Recipe
-    let size: CGFloat
+    let width: CGFloat?
+    let height: CGFloat?
     
     var body: some View {
         
@@ -18,18 +19,18 @@ struct RecipeImage: View {
             Image(thumbnailName)
                 .resizable()
                 .scaledToFill()
-                .frame(width: size)
+                .frame(width: width, height: height)
         } else {
             AsyncImage(url: URL(string: recipe.image)) { image in
                 image
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 200)
+                    .frame(width: width, height: height)
             } placeholder: {
                 Image("placeholder")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 200)
+                    .frame(width: width, height: height)
             }
         }
     }

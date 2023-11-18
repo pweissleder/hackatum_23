@@ -13,6 +13,7 @@ struct Preferences: Codable {
     var vegan: Bool
     var glutenFree: Bool
     var dairyFree: Bool
+    var peanutFree: Bool
     var veryHealthy: Bool
     var cheap: Bool
     var veryPopular: Bool

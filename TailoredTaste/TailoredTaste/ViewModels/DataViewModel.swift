@@ -6,7 +6,7 @@ public class DataViewModel: ObservableObject {
     
     static let shared = DataViewModel()
     
-    @Published var preferences: Preferences = Preferences(isCheatDay: false, vegetarian: false, vegan: false, glutenFree: false, dairyFree: false, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
+    @Published var preferences: Preferences = Preferences(isCheatDay: false, vegetarian: false, vegan: false, glutenFree: false, dairyFree: false, peanutFree: true, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
     @Published var recipes: [Recipe] = []
     
     @Published var filteredRecipes: [Recipe] = []
@@ -27,7 +27,7 @@ public class DataViewModel: ObservableObject {
                 
                 // Decode JSON data into the Recipe structure
                 let decoder = JSONDecoder()
-                var recipes = try decoder.decode(Recipes.self, from: jsonData)
+                let recipes = try decoder.decode(Recipes.self, from: jsonData)
                 
                 
                 print("JsonDecoder: Imported  \(recipes.recipes.count) recipes.")
@@ -46,7 +46,7 @@ public class DataViewModel: ObservableObject {
     }
     
     func initPreferences() -> Preferences {
-        return Preferences(isCheatDay: false, vegetarian: false, vegan: false, glutenFree: false, dairyFree: false, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
+        return Preferences(isCheatDay: false, vegetarian: false, vegan: false, glutenFree: false, dairyFree: false, peanutFree: false, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
     }
     
     func updateFavouriteRecipes() -> Void {
@@ -66,6 +66,7 @@ public class DataViewModel: ObservableObject {
             && ($0.vegan == preferences.vegan || $0.vegan)
             && ($0.glutenFree == preferences.glutenFree || $0.glutenFree)
             && ($0.dairyFree == preferences.dairyFree || $0.dairyFree)
+            && ($0.peanutFree == preferences.peanutFree || $0.peanutFree ?? true)
         }
         
     }

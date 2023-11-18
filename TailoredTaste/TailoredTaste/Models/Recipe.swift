@@ -13,6 +13,7 @@ struct Recipe: Codable, Identifiable, Equatable {
     let vegan: Bool
     let glutenFree: Bool
     let dairyFree: Bool
+    var peanutFree: Bool?
     let veryHealthy: Bool
     let cheap: Bool
     let veryPopular: Bool

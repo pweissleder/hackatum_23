@@ -4,7 +4,7 @@ struct Recipes: Codable {
     let recipes: [Recipe]
 }
 
-struct Recipe: Codable {
+struct Recipe: Codable, Identifiable {
     let vegetarian: Bool
     let vegan: Bool
     let glutenFree: Bool

@@ -26,6 +26,9 @@
 		B7E93FE12B082FE000430F57 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FE02B082FE000430F57 /* Feed.swift */; };
 		B7E93FE52B08318D00430F57 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FE42B08318D00430F57 /* Home.swift */; };
 		B7E93FE72B0831A400430F57 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FE62B0831A400430F57 /* Settings.swift */; };
+		B7E93FEA2B08BF4100430F57 /* RecipePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FE92B08BF4100430F57 /* RecipePreviewView.swift */; };
+		B7E93FED2B08CB8B00430F57 /* NutritionalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */; };
+		B7E93FEE2B08CB8B00430F57 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		B7E93FE02B082FE000430F57 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		B7E93FE42B08318D00430F57 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B7E93FE62B0831A400430F57 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B7E93FE92B08BF4100430F57 /* RecipePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePreviewView.swift; sourceTree = "<group>"; };
+		B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionalItemView.swift; sourceTree = "<group>"; };
+		B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 				B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */,
 				B7E93FA22B0812AD00430F57 /* ContentView.swift */,
 				B7E93FE42B08318D00430F57 /* Home.swift */,
+				B7E93FE92B08BF4100430F57 /* RecipePreviewView.swift */,
+				B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */,
+				B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */,
 				B7E93FE62B0831A400430F57 /* Settings.swift */,
 				B7E93FAF2B0812F100430F57 /* Feed */,
 				B7E93FA42B0812AF00430F57 /* Assets.xcassets */,
@@ -225,14 +234,17 @@
 				0B8957C32B08163000C9B6FE /* Recipe.swift in Sources */,
 				B7E93FB42B08132D00430F57 /* Player.swift in Sources */,
 				B7E93FB72B08150000430F57 /* Video.swift in Sources */,
+				B7E93FED2B08CB8B00430F57 /* NutritionalItemView.swift in Sources */,
 				B7E93FB32B08132D00430F57 /* PlayerView.swift in Sources */,
 				B7E93FE12B082FE000430F57 /* Feed.swift in Sources */,
 				B7E93FB52B08132D00430F57 /* PlayerScrollView.swift in Sources */,
+				B7E93FEE2B08CB8B00430F57 /* RecipeDetailView.swift in Sources */,
 				B7E93FA32B0812AD00430F57 /* ContentView.swift in Sources */,
 				0B8957C92B081A9C00C9B6FE /* Preferences.swift in Sources */,
 				B7E93FE72B0831A400430F57 /* Settings.swift in Sources */,
 				B7E93FE52B08318D00430F57 /* Home.swift in Sources */,
 				B7E93FA12B0812AD00430F57 /* TailoredTasteApp.swift in Sources */,
+				B7E93FEA2B08BF4100430F57 /* RecipePreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +369,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TailoredTaste/TailoredTaste.entitlements;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TailoredTaste/Preview Content\"";
-				DEVELOPMENT_TEAM = QCCR4Q69JK;
-				DEVELOPMENT_TEAM = RF5MBDMVN8;
+				DEVELOPMENT_TEAM = ZPY4BSSXTW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -399,12 +411,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TailoredTaste/TailoredTaste.entitlements;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TailoredTaste/Preview Content\"";
-				DEVELOPMENT_TEAM = QCCR4Q69JK;
-				DEVELOPMENT_TEAM = RF5MBDMVN8;
+				DEVELOPMENT_TEAM = ZPY4BSSXTW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

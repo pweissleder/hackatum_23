@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B8957C32B08163000C9B6FE /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957C22B08163000C9B6FE /* Recipe.swift */; };
+		0B8957C72B0816FF00C9B6FE /* mockedRecipes.js in Resources */ = {isa = PBXBuildFile; fileRef = 0B8957C62B0816FF00C9B6FE /* mockedRecipes.js */; };
+		0B8957C92B081A9C00C9B6FE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957C82B081A9C00C9B6FE /* Preferences.swift */; };
+		0B8957CC2B083C2200C9B6FE /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8957CB2B083C2200C9B6FE /* recipes.json */; };
+		0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8957CD2B08415E00C9B6FE /* tenRecipes.json */; };
 		B7E93FA12B0812AD00430F57 /* TailoredTasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */; };
 		B7E93FA32B0812AD00430F57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA22B0812AD00430F57 /* ContentView.swift */; };
 		B7E93FA52B0812AF00430F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FA42B0812AF00430F57 /* Assets.xcassets */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B8957C22B08163000C9B6FE /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		0B8957C62B0816FF00C9B6FE /* mockedRecipes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mockedRecipes.js; sourceTree = "<group>"; };
+		0B8957C82B081A9C00C9B6FE /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		0B8957CB2B083C2200C9B6FE /* recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		0B8957CD2B08415E00C9B6FE /* tenRecipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tenRecipes.json; sourceTree = "<group>"; };
 		B7E93F9D2B0812AD00430F57 /* TailoredTaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TailoredTaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailoredTasteApp.swift; sourceTree = "<group>"; };
 		B7E93FA22B0812AD00430F57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +63,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B8957C12B08149800C9B6FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B8957C22B08163000C9B6FE /* Recipe.swift */,
+				0B8957C82B081A9C00C9B6FE /* Preferences.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B8957C42B08169A00C9B6FE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0B8957C52B0816D800C9B6FE /* MockData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0B8957C52B0816D800C9B6FE /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				0B8957C62B0816FF00C9B6FE /* mockedRecipes.js */,
+				0B8957CB2B083C2200C9B6FE /* recipes.json */,
+				0B8957CD2B08415E00C9B6FE /* tenRecipes.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
 		B7E93F942B0812AD00430F57 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +109,8 @@
 		B7E93F9F2B0812AD00430F57 /* TailoredTaste */ = {
 			isa = PBXGroup;
 			children = (
+				0B8957C42B08169A00C9B6FE /* Data */,
+				0B8957C12B08149800C9B6FE /* Models */,
 				B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */,
 				B7E93FA22B0812AD00430F57 /* ContentView.swift */,
 				B7E93FE42B08318D00430F57 /* Home.swift */,
@@ -167,6 +206,9 @@
 			files = (
 				B7E93FA92B0812AF00430F57 /* Preview Assets.xcassets in Resources */,
 				B7E93FA52B0812AF00430F57 /* Assets.xcassets in Resources */,
+				0B8957C72B0816FF00C9B6FE /* mockedRecipes.js in Resources */,
+				0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */,
+				0B8957CC2B083C2200C9B6FE /* recipes.json in Resources */,
 				B7E93FDD2B082DF700430F57 /* video2.mp4 in Resources */,
 				B7E93FDF2B082DF700430F57 /* video1.mp4 in Resources */,
 				B7E93FDE2B082DF700430F57 /* video3.mp4 in Resources */,
@@ -180,12 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8957C32B08163000C9B6FE /* Recipe.swift in Sources */,
 				B7E93FB42B08132D00430F57 /* Player.swift in Sources */,
 				B7E93FB72B08150000430F57 /* Video.swift in Sources */,
 				B7E93FB32B08132D00430F57 /* PlayerView.swift in Sources */,
 				B7E93FE12B082FE000430F57 /* Feed.swift in Sources */,
 				B7E93FB52B08132D00430F57 /* PlayerScrollView.swift in Sources */,
 				B7E93FA32B0812AD00430F57 /* ContentView.swift in Sources */,
+				0B8957C92B081A9C00C9B6FE /* Preferences.swift in Sources */,
 				B7E93FE72B0831A400430F57 /* Settings.swift in Sources */,
 				B7E93FE52B08318D00430F57 /* Home.swift in Sources */,
 				B7E93FA12B0812AD00430F57 /* TailoredTasteApp.swift in Sources */,
@@ -317,6 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TailoredTaste/Preview Content\"";
+				DEVELOPMENT_TEAM = QCCR4Q69JK;
 				DEVELOPMENT_TEAM = RF5MBDMVN8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -336,7 +381,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.HelleJeans.TailoredTaste;
+				PRODUCT_BUNDLE_IDENTIFIER = de.test131231223;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -358,6 +403,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TailoredTaste/Preview Content\"";
+				DEVELOPMENT_TEAM = QCCR4Q69JK;
 				DEVELOPMENT_TEAM = RF5MBDMVN8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -377,7 +423,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.HelleJeans.TailoredTaste;
+				PRODUCT_BUNDLE_IDENTIFIER = de.test131231223;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";

@@ -82,7 +82,7 @@ struct RecipeDetailView: View {
                     
                     
                     // Nutrition
-                    VStack(alignment: .leading, spacing: 10){
+                    VStack(alignment: .center, spacing: 10){
                         HStack {
                             Spacer()
                             Text("Nutrition")
@@ -90,12 +90,11 @@ struct RecipeDetailView: View {
                                         .default))
                             Spacer()
                         }
-                        ProgressBarView(currentState: 30, name: "Carbs", finalState: 40, color: .accentColor)
-                        ProgressBarView(currentState: 20, name: "Carbs", finalState: 60, color: .accentColor)
-                        ProgressBarView(currentState: 10, name: "Carbs", finalState: 300, color: .accentColor)
-                        ProgressBarView(currentState: 80, name: "Carbs", finalState: 400, color: .accentColor)
-                        ProgressBarView(currentState: 10, name: "Carbs", finalState: 10, color: .accentColor)
-                        ProgressBarView(currentState: 30, name: "Carbs", finalState: 30, color: .accentColor)
+                        ProgressBarView(currentState: CGFloat(recipe.carbs) , name: "Carbs", finalState: 230, color: .accentColor)
+                        ProgressBarView(currentState: CGFloat(recipe.fat), name: "Fat", finalState: 60, color: .accentColor)
+                        ProgressBarView(currentState: CGFloat(recipe.satFat), name: "SatFat", finalState: 30, color: .accentColor)
+                        ProgressBarView(currentState: CGFloat(recipe.protein), name: "Protein", finalState: 92, color: .accentColor)
+                        ProgressBarView(currentState: CGFloat(recipe.sugar), name: "Sugar", finalState: 35, color: .accentColor)
                         
                         
                     }

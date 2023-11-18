@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProgressBarView: View {
-
+    @State private var drawingWidth = false
     @State var currentState: CGFloat
     var name: String
     var finalState: CGFloat
@@ -21,16 +21,18 @@ struct ProgressBarView: View {
             HStack {
                 Text(String(Int(currentState))).font(.caption)
                 ZStack(alignment: .leading) {
-                    RoundedRectangle(cornerRadius: 3)
+                    RoundedRectangle(cornerRadius: 5)
                         .fill(Color(.systemGray6))
-                    Text(String(Int(( currentState / finalState) * 250)))
-                    RoundedRectangle(cornerRadius: 3)
+                    RoundedRectangle(cornerRadius: 5)
                         .fill(color)
-                        .frame(width: CGFloat((Int(currentState) / Int(finalState)) * 250))
-                    
+                        .frame(width: drawingWidth ? (( currentState / finalState) * 250) : 0)
+                        .animation(.easeInOut(duration: 2), value: drawingWidth)
                 }
                 .frame(width: 250, height: 12)
-                Text(String(Int(finalState))).font(.caption)
+                .onAppear {
+                                drawingWidth.toggle()
+                            }
+                Text(String(Int(finalState))).font(.caption2)
             }
         }
     }

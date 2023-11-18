@@ -13,7 +13,7 @@ struct RecipePreviewView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            RecipeImage(recipe: recipe)
+            RecipeImage(recipe: recipe, size: 200)
             Text(recipe.title).font(.headline)
                 .padding(5)
         }

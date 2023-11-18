@@ -10,14 +10,15 @@ import SwiftUI
 struct RecipeImage: View {
     
     let recipe: Recipe
+    let size: CGFloat
     
     var body: some View {
         
         if let thumbnailName = recipe.thumbnailName {
             Image(thumbnailName)
                 .resizable()
-                .scaledToFill()
-                .frame(width: 200)
+                .scaledToFit()
+                .frame(width: size)
         } else {
             AsyncImage(url: URL(string: recipe.image)) { image in
                 image

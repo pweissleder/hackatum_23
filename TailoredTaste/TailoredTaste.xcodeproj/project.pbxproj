@@ -13,6 +13,7 @@
 		0B8957CC2B083C2200C9B6FE /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8957CB2B083C2200C9B6FE /* recipes.json */; };
 		0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8957CD2B08415E00C9B6FE /* tenRecipes.json */; };
 		0B8957D12B08C30200C9B6FE /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957D02B08C30200C9B6FE /* DataViewModel.swift */; };
+		0B8957D32B08E60C00C9B6FE /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957D22B08E60C00C9B6FE /* HealthKitService.swift */; };
 		B7E93FA12B0812AD00430F57 /* TailoredTasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */; };
 		B7E93FA32B0812AD00430F57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA22B0812AD00430F57 /* ContentView.swift */; };
 		B7E93FA52B0812AF00430F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FA42B0812AF00430F57 /* Assets.xcassets */; };
@@ -40,6 +41,8 @@
 		0B8957CB2B083C2200C9B6FE /* recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		0B8957CD2B08415E00C9B6FE /* tenRecipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tenRecipes.json; sourceTree = "<group>"; };
 		0B8957D02B08C30200C9B6FE /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		0B8957D22B08E60C00C9B6FE /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		0B8957D42B08EF5D00C9B6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B7E93F9D2B0812AD00430F57 /* TailoredTaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TailoredTaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailoredTasteApp.swift; sourceTree = "<group>"; };
 		B7E93FA22B0812AD00430F57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +111,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		0B8957D52B08FE7800C9B6FE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0B8957D22B08E60C00C9B6FE /* HealthKitService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		B7E93F942B0812AD00430F57 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +138,8 @@
 		B7E93F9F2B0812AD00430F57 /* TailoredTaste */ = {
 			isa = PBXGroup;
 			children = (
+				0B8957D52B08FE7800C9B6FE /* Services */,
+				0B8957D42B08EF5D00C9B6FE /* Info.plist */,
 				0B8957CF2B08C2E300C9B6FE /* ViewModels */,
 				0B8957C42B08169A00C9B6FE /* Data */,
 				0B8957C12B08149800C9B6FE /* Models */,
@@ -251,6 +264,7 @@
 				B7E93FF02B08D5F500430F57 /* IngredientView.swift in Sources */,
 				B7E93FED2B08CB8B00430F57 /* NutritionalItemView.swift in Sources */,
 				B7E93FB32B08132D00430F57 /* PlayerView.swift in Sources */,
+				0B8957D32B08E60C00C9B6FE /* HealthKitService.swift in Sources */,
 				B7E93FE12B082FE000430F57 /* Feed.swift in Sources */,
 				B7E93FB52B08132D00430F57 /* PlayerScrollView.swift in Sources */,
 				B7E93FEE2B08CB8B00430F57 /* RecipeDetailView.swift in Sources */,
@@ -386,6 +400,7 @@
 				CODE_SIGN_ENTITLEMENTS = TailoredTaste/TailoredTaste.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -394,6 +409,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TailoredTaste/Info.plist;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "The app will use the records, to set your Preferences for the recipes. We will for example filter the recipes for allergies you might have so you dont have to worry about getting ill.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app will update your nutrition data in health based on the recipes you cook";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -409,7 +428,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.test131231223;
+				PRODUCT_BUNDLE_IDENTIFIER = de.test13123122312312;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = de.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -428,6 +448,7 @@
 				CODE_SIGN_ENTITLEMENTS = TailoredTaste/TailoredTaste.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -436,6 +457,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TailoredTaste/Info.plist;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "The app will use the records, to set your Preferences for the recipes. We will for example filter the recipes for allergies you might have so you dont have to worry about getting ill.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app will update your nutrition data in health based on the recipes you cook";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -451,7 +476,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.test131231223;
+				PRODUCT_BUNDLE_IDENTIFIER = de.test13123122312312;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = de.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";

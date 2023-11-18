@@ -3,11 +3,11 @@ import SwiftUI
 
 
 public class DataViewModel: ObservableObject {
-    @Published var preferences: Preferences
-    @Published var recipes: [Recipe]
+    @Published var preferences: Preferences = Preferences(isCheatDay: false, vegetarian: false, vegan: false, glutenFree: false, dairyFree: false, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
+    @Published var recipes: [Recipe] = []
     
-    var filteredRecipes: [Recipe]
-    var favouriteRecipes: [Recipe]
+    var filteredRecipes: [Recipe] = []
+    var favouriteRecipes: [Recipe] = []
     
     init() {
         recipes = getRecipes()
@@ -90,13 +90,13 @@ public class DataViewModel: ObservableObject {
                 recipes[rIndex].cookingEvents = cookingEvents
     }
     
-    func addToFavourites(id: Int) -> {
+    func addToFavourites(id: Int) {
         let rIndex = recipes.firstIndex(where: {$0.id == id})!
         recipes[rIndex].isFavourite = true
         updateFavouriteRecipes()
     }
     
-    func removeFromFavourites(id: Int) -> {
+    func removeFromFavourites(id: Int) {
         let rIndex = recipes.firstIndex(where: {$0.id == id})!
         recipes[rIndex].isFavourite = false
         updateFavouriteRecipes()

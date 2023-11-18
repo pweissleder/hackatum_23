@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Home: View {
     
+    let healthKitService: HealthKitService = HealthKitService()
+    
     let columns: [GridItem] = [.init(.fixed(200)), .init(.fixed(200))]
 
     var body: some View {

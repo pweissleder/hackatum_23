@@ -19,7 +19,10 @@ struct ProgressBarView: View {
             Text(name)
                 .bold()
             HStack {
-                Text(String(Int(currentState))).font(.caption)
+                Text(String(Int(currentState)))
+                    .foregroundColor(.secondary)
+                    .padding(.horizontal, 5)
+                    .frame(width:50)
                 ZStack(alignment: .leading) {
                     RoundedRectangle(cornerRadius: 5)
                         .fill(Color(.systemGray6))
@@ -32,7 +35,11 @@ struct ProgressBarView: View {
                 .onAppear {
                                 drawingWidth.toggle()
                             }
-                Text(String(Int(finalState))).font(.caption2)
+                Text(String(Int(finalState)))
+                    .foregroundColor(.secondary)
+                    .padding(.horizontal, 5)
+                    .frame(width:50)
+                
             }
         }
     }

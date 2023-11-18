@@ -23,7 +23,7 @@ struct RecipeDetailView: View {
                     Spacer()
                     LabelView(image:"dollarsign.circle.fill")
                     LabelView(image: "leaf")
-                }.padding(10)
+                }.padding(15)
             }.background(
                 RecipeImage(recipe: recipe, width: nil, height: nil)
             )

@@ -19,7 +19,7 @@ struct IngredientView: View {
             Image("Pizza") //Hier Ingredient image
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 40, height: 40)
+                .frame(width: 50, height: 50)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.white, lineWidth: 2))
             

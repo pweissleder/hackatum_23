@@ -33,6 +33,14 @@ struct NutritionalItemView: View {
                 .frame(width:63, height: 63)
             )
     }
+    static var previews: some View {
+        Group {
+            NutritionalItemView(value: 123, name: "Calories", unitName: "g").colorScheme(.light)
+                .previewLayout(.sizeThatFits)
+            NutritionalItemView(value: 78, name: "Calories", unitName: "g").colorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+        }
+    }
 }
 
 struct NutritionalItemView_Previews: PreviewProvider {

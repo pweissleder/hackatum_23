@@ -27,8 +27,6 @@ struct Home: View {
                     }
                 }
             }
-            
-            .navigationTitle("Hello Benedict")
             .navigationBarTitleDisplayMode(.large)
         }
         

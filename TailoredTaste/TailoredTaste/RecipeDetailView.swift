@@ -23,7 +23,7 @@ struct RecipeDetailView: View {
                     LabelView(image: "leaf")
                 }
             }.background(
-                RecipeImage(recipe: recipe, size: 500)
+                RecipeImage(recipe: recipe, width: nil, height: nil)
             )
             
             ScrollView {

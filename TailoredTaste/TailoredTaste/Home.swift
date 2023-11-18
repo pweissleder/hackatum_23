@@ -12,7 +12,7 @@ struct Home: View {
     
     @ObservedObject var dataViewModel = DataViewModel.shared
     
-    let columns: [GridItem] = [.init(.fixed(200)), .init(.fixed(200))]
+    let columns: [GridItem] = [.init(), .init()]
 
     var body: some View {
         NavigationView {
@@ -23,10 +23,12 @@ struct Home: View {
                             RecipeDetailView(recipe: recipe)
                         } label: {
                             RecipePreviewView(recipe: recipe)
+                                .padding(5)
                         }
                     }
                 }
             }
+            .padding(10)
             .navigationBarTitleDisplayMode(.large)
             .navigationTitle("Hello Bene 👋")
         }

@@ -13,13 +13,14 @@ struct RecipePreviewView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            RecipeImage(recipe: recipe, size: 200)
-            Text(recipe.title).font(.headline)
-                .padding(5)
+            RecipeImage(recipe: recipe, width: 180, height: 150)
+            Text(recipe.title)
+                .font(.headline)
+                .padding(8)
         }
         .background(.white)
         .cornerRadius(12)
         .shadow(radius: 3)
-        .frame(width: 200)
+        .frame(width: 180, height: 200)
     }
 }

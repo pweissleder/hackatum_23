@@ -7,9 +7,10 @@
 
 import Foundation
 
-enum DietEnum {
+enum DietEnum: String {
     case carnivore
     case pescetarian
     case vegetarian
     case vegan
+    
 }

@@ -6,11 +6,13 @@ public class DataViewModel: ObservableObject {
     
     static let shared = DataViewModel()
     
-    @Published var preferences: Preferences = Preferences(isCheatDay: false, vegetarian: false, vegan: false, pescetarian: true, glutenFree: false, dairyFree: false, peanutFree: true, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
+    @Published var preferences: Preferences = Preferences(isCheatDay: false, vegetarian: false, vegan: false, pescetarian: false, carnivore: true, glutenFree: false, dairyFree: false, peanutFree: true, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
     @Published var recipes: [Recipe] = []
     
     @Published var filteredRecipes: [Recipe] = []
     @Published var favouriteRecipes: [Recipe] = []
+    
+    
     
     init() {
         recipes = getRecipes()
@@ -85,7 +87,12 @@ public class DataViewModel: ObservableObject {
         let rIndex = recipes.firstIndex(where: {$0.id == id})!
         var cookingEvents = recipes[rIndex].cookingEvents ?? []
         cookingEvents.append(cookingEvent)
-                recipes[rIndex].cookingEvents = cookingEvents
+        recipes[rIndex].cookingEvents = cookingEvents
+        
+        let recipe = recipes[rIndex]
+        print("export started")
+        HealthKitService.shared.exportNutritionData(calories: recipe.calories, fat: recipe.fat, satFat: recipe.satFat, carbs: recipe.carbs, fiber: recipe.fiber, protein: recipe.protein, sugar: recipe.sugar)
+        
     }
     
     func addToFavourites(id: Int) {
@@ -102,22 +109,40 @@ public class DataViewModel: ObservableObject {
     
     func updateDiet(diet: DietEnum) {
         switch diet {
-            case .carnivore:
-                preferences.vegan = true
-                preferences.vegetarian = true
-                preferences.pescetarian = true
-            case .pescetarian:
-                preferences.vegan = true
-                preferences.vegetarian = true
-                preferences.pescetarian = true
-            case .vegetarian:
-                preferences.vegan = true
-                preferences.vegetarian = true
-                preferences.pescetarian = false
-            case .vegan:
-                preferences.vegan = true
-                preferences.vegetarian = false
-                preferences.pescetarian = false
-            }
+        case .carnivore:
+            preferences.vegan = true
+            preferences.vegetarian = true
+            preferences.pescetarian = true
+        case .pescetarian:
+            preferences.vegan = true
+            preferences.vegetarian = true
+            preferences.pescetarian = true
+        case .vegetarian:
+            preferences.vegan = true
+            preferences.vegetarian = true
+            preferences.pescetarian = false
+        case .vegan:
+            preferences.vegan = true
+            preferences.vegetarian = false
+            preferences.pescetarian = false
+        }
     }
+    
+    func getAllergies() -> Set<String> {
+        var allergies: [String] = []
+        if preferences.glutenFree {
+            allergies.append("Gluten")
+        }
+        
+        if preferences.dairyFree {
+            allergies.append("Milk")
+        }
+        
+        if preferences.peanutFree {
+            allergies.append("Peanuts")
+        }
+        return Set(allergies)
+    }
+    
+    
 }

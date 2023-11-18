@@ -10,6 +10,8 @@ import HealthKit
 
 
 class HealthKitService {
+    static let shared = HealthKitService()
+    
     let healthStore: HKHealthStore
     
     init() {
@@ -23,25 +25,24 @@ class HealthKitService {
     
     func requestPermission() -> Void {
         let writeDataTypes: Set<HKQuantityType> = Set([HKQuantityType.quantityType(forIdentifier: .dietaryProtein)!,
-                                                  HKQuantityType.quantityType(forIdentifier: .dietaryFatTotal)!,
-                                                  HKQuantityType.quantityType(forIdentifier: .dietaryFatSaturated)!,
-                                                  HKQuantityType.quantityType(forIdentifier: .dietaryFiber)!,
-                                                  HKQuantityType.quantityType(forIdentifier: .dietarySugar)!])
+                                                       HKQuantityType.quantityType(forIdentifier: .dietaryFatTotal)!,
+                                                       HKQuantityType.quantityType(forIdentifier: .dietaryFatSaturated)!,
+                                                       HKQuantityType.quantityType(forIdentifier: .dietaryFiber)!,
+                                                       HKQuantityType.quantityType(forIdentifier: .dietarySugar)!,
+                                                       HKQuantityType.quantityType(forIdentifier: .dietaryCarbohydrates)!,
+                                                       HKQuantityType.quantityType(forIdentifier: .dietaryEnergyConsumed)!])
         let readDataTypes: Set<HKObjectType> = Set([HKObjectType.clinicalType(forIdentifier: .allergyRecord)!,
-                                               HKObjectType.activitySummaryType()])
-            
+                                                    HKObjectType.activitySummaryType()])
+        
         healthStore.requestAuthorization(toShare: writeDataTypes, read: readDataTypes) { (success, error) in
-                guard success else {
-                    // Handle errors here.
-                    fatalError("*** An error occurred while requesting authorization: \(error!.localizedDescription) ***")
-                }
+            guard success else {
+                // Handle errors here.
+                fatalError("*** An error occurred while requesting authorization: \(error!.localizedDescription) ***")
             }
+        }
     }
     
-    
     func fetchData() -> Void {
-            requestPermission()
-        
         print("start fetching allergies")
         let allergyType = HKObjectType.clinicalType(forIdentifier: .allergyRecord)!
         
@@ -72,7 +73,7 @@ class HealthKitService {
             }
             
         }
-    
+        
         let activityQuery = HKActivitySummaryQuery(predicate: nil) { (query, samples, error) in
             
             guard let activitySummaries = samples else {
@@ -100,14 +101,51 @@ class HealthKitService {
                 }
             }
         }
-
-            
+        
+        
         healthStore.execute(activityQuery)
         healthStore.execute(allergyQuery)
     }
     
-    func exportNutritionData(nutrition: Nutrition) {
-       // HKObjectType.quantityType(forIdentifier: .)
+    func exportNutritionData(calories: Int, fat: Int, satFat: Int, carbs: Int, fiber: Int, protein: Int, sugar: Int) {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            print("HealthKit is not available on this device.")
+            return
+        }
+        
+        let samples = createQuantitySamples(calories: calories, fat: fat, satFat: satFat, carbs: carbs, fiber: fiber, protein: protein, sugar: sugar)
+        healthStore.save(samples) { (success, error) in
+                    if let error = error {
+                        print("Error saving dietary data: \(error.localizedDescription)")
+                    } else {
+                        print("Dietary data saved successfully.")
+                    }
+                }
+        
     }
-     
+    
+    private func createQuantitySamples(calories: Int, fat: Int, satFat: Int, carbs: Int, fiber: Int, protein: Int, sugar: Int) -> [HKQuantitySample] {
+        let calorieType = HKObjectType.quantityType(forIdentifier: .dietaryEnergyConsumed)!
+        let proteinType = HKObjectType.quantityType(forIdentifier: .dietaryProtein)!
+        let fatType = HKObjectType.quantityType(forIdentifier: .dietaryFatTotal)!
+        let satFatType = HKObjectType.quantityType(forIdentifier: .dietaryFatSaturated)!
+        let fiberType = HKObjectType.quantityType(forIdentifier: .dietaryFiber)!
+        let sugarType = HKObjectType.quantityType(forIdentifier: .dietarySugar)!
+        let carbType = HKObjectType.quantityType(forIdentifier: .dietaryCarbohydrates)!
+        
+        //let calorySample = createQuantitySample(for: calorieType, value: calories)
+        let proteinSample = createQuantitySample(for: proteinType, value: protein)
+        let totalFatSample = createQuantitySample(for: fatType, value: fat)
+        let saturatedFatSample = createQuantitySample(for: satFatType, value: satFat)
+        let fiberSample = createQuantitySample(for: fiberType, value: fiber)
+        let sugarSample = createQuantitySample(for: sugarType, value: sugar)
+        let carbSample = createQuantitySample(for: carbType, value: carbs)
+        
+        
+        return [proteinSample, totalFatSample, saturatedFatSample, fiberSample, sugarSample, carbSample]
+    }
+    
+    private func createQuantitySample(for type: HKQuantityType, value: Int) -> HKQuantitySample {
+        return HKQuantitySample(type: type, quantity: HKQuantity(unit: .gram(), doubleValue: Double(value)), start: Date.now, end: Date.now)
+    }
 }

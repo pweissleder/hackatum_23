@@ -29,7 +29,6 @@ public class DataViewModel: ObservableObject {
                 let decoder = JSONDecoder()
                 var recipes = try decoder.decode(Recipes.self, from: jsonData)
                 
-                // Now 'recipe' contains the parsed data
                 
                 print("JsonDecoder: Imported  \(recipes.recipes.count) recipes.")
                 return recipes.recipes

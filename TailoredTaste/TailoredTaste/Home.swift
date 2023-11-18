@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct Home: View {
     
@@ -19,7 +20,8 @@ struct Home: View {
                 LazyVGrid(columns: columns) {
                     ForEach(dataViewModel.favouriteRecipes) { recipe in
                         NavigationLink {
-                            RecipeDetailView(recipe: recipe)
+                            Player(player: getAndStartPlayer(name: recipe.videoName!))
+                                .ignoresSafeArea(.all)
                         } label: {
                             RecipePreviewView(recipe: recipe)
                         }
@@ -31,6 +33,12 @@ struct Home: View {
             .navigationBarTitleDisplayMode(.large)
         }
         
+    }
+    
+    func getAndStartPlayer(name: String) -> AVPlayer {
+        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: name, ofType: "mp4")!))
+        player.play()
+        return player
     }
     
 }

@@ -54,7 +54,7 @@ struct PlayerScrollView: UIViewRepresentable {
         }
         
         func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-            /*let currentIndex = Int(scrollView.contentOffset.y / UIScreen.main.bounds.height)
+            let currentIndex = Int(scrollView.contentOffset.y / UIScreen.main.bounds.height)
             
             if index != currentIndex {
                 index = currentIndex
@@ -72,7 +72,7 @@ struct PlayerScrollView: UIViewRepresentable {
                     
                     self.parent.data[self.index].replay = true
                 }
-            }*/
+            }
         }
     }
 }

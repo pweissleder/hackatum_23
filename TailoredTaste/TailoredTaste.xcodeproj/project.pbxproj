@@ -34,6 +34,7 @@
 		B7E93FF32B08ECE100430F57 /* Kartoffelschalen Chips.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */; };
 		B7E93FF52B08ED3D00430F57 /* RecipeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FF42B08ED3D00430F57 /* RecipeImage.swift */; };
 		B7E93FF72B08F66E00430F57 /* Wunder.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF62B08F66E00430F57 /* Wunder.mp4 */; };
+		B7E93FF92B09071100430F57 /* pasta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF82B09071100430F57 /* pasta.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kartoffelschalen Chips.mp4"; sourceTree = "<group>"; };
 		B7E93FF42B08ED3D00430F57 /* RecipeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImage.swift; sourceTree = "<group>"; };
 		B7E93FF62B08F66E00430F57 /* Wunder.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wunder.mp4; sourceTree = "<group>"; };
+		B7E93FF82B09071100430F57 /* pasta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pasta.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				B7E93FAF2B0812F100430F57 /* Feed */,
 				B7E93FA42B0812AF00430F57 /* Assets.xcassets */,
 				B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */,
+				B7E93FF82B09071100430F57 /* pasta.mp4 */,
 				B7E93FF62B08F66E00430F57 /* Wunder.mp4 */,
 				B7E93FDC2B082DF700430F57 /* video1.mp4 */,
 				B7E93FDA2B082DF600430F57 /* video2.mp4 */,
@@ -243,6 +246,7 @@
 				B7E93FF72B08F66E00430F57 /* Wunder.mp4 in Resources */,
 				0B8957CC2B083C2200C9B6FE /* recipes.json in Resources */,
 				B7E93FDD2B082DF700430F57 /* video2.mp4 in Resources */,
+				B7E93FF92B09071100430F57 /* pasta.mp4 in Resources */,
 				B7E93FF32B08ECE100430F57 /* Kartoffelschalen Chips.mp4 in Resources */,
 				B7E93FDF2B082DF700430F57 /* video1.mp4 in Resources */,
 				B7E93FDE2B082DF700430F57 /* video3.mp4 in Resources */,

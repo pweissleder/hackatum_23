@@ -48,6 +48,14 @@ struct Recipe: Codable, Identifiable {
     let originalId: String?
     let spoonacularScore: Float
     let spoonacularSourceUrl: String?
+    
+    let calories: Int
+    let fat: Int
+    let satFat: Int
+    let carbs: Int
+    let fiber: Int
+    let protein: Int
+    let sugar: Int
 }
 
 struct Ingredient: Codable {

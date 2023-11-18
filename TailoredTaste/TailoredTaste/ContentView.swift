@@ -18,7 +18,7 @@ struct ContentView: View {
         TabView {
             Feed()
                 .tabItem {
-                    Label("Recepies", systemImage: "fork.knife")
+                    Label("Explore", systemImage: "fork.knife")
                 }
             Home()
                 .tabItem {

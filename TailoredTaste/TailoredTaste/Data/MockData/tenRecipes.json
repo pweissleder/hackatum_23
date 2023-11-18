@@ -287,6 +287,13 @@
             "title": "Potato chips Subzi",
             "readyInMinutes": 10,
             "servings": 2,
+            "calories": 300,
+            "fat": 15,
+            "satFat": 2,
+            "carbs": 40,
+            "fiber": 4,
+            "protein": 3,
+            "sugar": 2,
             "sourceUrl": "http://www.spiceupthecurry.com/potato-chips-subzi/",
             "image": "https://spoonacular.com/recipeImages/600495-556x370.jpg",
             "imageType": "jpg",
@@ -466,9 +473,10 @@
             "spoonacularScore": 79.04132080078125
         },
         {
-            "thumbnailName": "duckthumnail",
-            "videoName": "Wunder",
-            "vegetarian": true,
+            "thumbnailName": "pastathumbnail",
+            "videoName": "pasta",
+            "spoonacularScore": 80,
+            "vegetarian": false,
             "vegan": false,
             "glutenFree": true,
             "dairyFree": false,
@@ -477,259 +485,184 @@
             "veryPopular": false,
             "sustainable": false,
             "lowFodmap": false,
-            "weightWatcherSmartPoints": 8,
+            "weightWatcherSmartPoints": 11,
             "gaps": "no",
-            "preparationMinutes": -1,
-            "cookingMinutes": -1,
-            "aggregateLikes": 3,
-            "healthScore": 21,
-            "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
-            "license": "CC BY 3.0",
-            "sourceName": "Foodista",
-            "pricePerServing": 189.86,
+            "preparationMinutes": 15,
+            "cookingMinutes": 30,
+            "aggregateLikes": 150,
+            "healthScore": 65,
+            "creditsText": "Delicious Recipes",
+            "sourceName": "Delicious Recipes",
+            "pricePerServing": 150.0,
             "extendedIngredients": [
-                {
-                    "id": 11206,
-                    "aisle": "Produce",
-                    "image": "cucumber.jpg",
-                    "consistency": "SOLID",
-                    "name": "cucumber",
-                    "nameClean": "cucumber",
-                    "original": "1 large cucumber",
-                    "originalName": "cucumber",
-                    "amount": 1.0,
-                    "unit": "large",
-                    "meta": [],
-                    "measures": {
-                        "us": {
-                            "amount": 1.0,
-                            "unitShort": "large",
-                            "unitLong": "large"
-                        },
-                        "metric": {
-                            "amount": 1.0,
-                            "unitShort": "large",
-                            "unitLong": "large"
-                        }
-                    }
-                },
-                {
-                    "id": 1034053,
-                    "aisle": "Oil, Vinegar, Salad Dressing",
-                    "image": "olive-oil.jpg",
-                    "consistency": "LIQUID",
-                    "name": "extra virgin olive oil",
-                    "nameClean": "extra virgin olive oil",
-                    "original": "high-quality extra virgin olive oil",
-                    "originalName": "high-quality extra virgin olive oil",
-                    "amount": 4.0,
-                    "unit": "servings",
-                    "meta": [],
-                    "measures": {
-                        "us": {
-                            "amount": 4.0,
-                            "unitShort": "servings",
-                            "unitLong": "servings"
-                        },
-                        "metric": {
-                            "amount": 4.0,
-                            "unitShort": "servings",
-                            "unitLong": "servings"
-                        }
-                    }
-                },
-                {
-                    "id": 1019,
-                    "aisle": "Cheese",
-                    "image": "feta.png",
-                    "consistency": "SOLID",
-                    "name": "greek feta",
-                    "nameClean": "feta cheese",
-                    "original": "1/4 pound greek feta",
-                    "originalName": "greek feta",
-                    "amount": 0.25,
-                    "unit": "pound",
-                    "meta": [],
-                    "measures": {
-                        "us": {
-                            "amount": 0.25,
-                            "unitShort": "lb",
-                            "unitLong": "pounds"
-                        },
-                        "metric": {
-                            "amount": 113.398,
-                            "unitShort": "g",
-                            "unitLong": "grams"
-                        }
-                    }
-                },
-                {
-                    "id": 1009195,
-                    "aisle": "Canned and Jarred",
-                    "image": "calamata-or-kalamata-olives.jpg",
-                    "consistency": "SOLID",
-                    "name": "kalamata olives",
-                    "nameClean": "kalamata olives",
-                    "original": "1 dozen Kalamata olives",
-                    "originalName": "Kalamata olives",
-                    "amount": 12.0,
-                    "unit": "",
-                    "meta": [],
-                    "measures": {
-                        "us": {
-                            "amount": 12.0,
-                            "unitShort": "",
-                            "unitLong": ""
-                        },
-                        "metric": {
-                            "amount": 12.0,
-                            "unitShort": "",
-                            "unitLong": ""
-                        }
-                    }
-                },
-                {
-                    "id": 10011282,
-                    "aisle": "Produce",
-                    "image": "red-onion.png",
-                    "consistency": "SOLID",
-                    "name": "onion",
-                    "nameClean": "red onion",
-                    "original": "1 large red onion, sliced thinly",
-                    "originalName": "red onion, sliced thinly",
-                    "amount": 1.0,
-                    "unit": "large",
-                    "meta": [
-                        "red",
-                        "sliced"
-                    ],
-                    "measures": {
-                        "us": {
-                            "amount": 1.0,
-                            "unitShort": "large",
-                            "unitLong": "large"
-                        },
-                        "metric": {
-                            "amount": 1.0,
-                            "unitShort": "large",
-                            "unitLong": "large"
-                        }
-                    }
-                },
-                {
-                    "id": 11529,
-                    "aisle": "Produce",
-                    "image": "tomato.png",
-                    "consistency": "SOLID",
-                    "name": "tomatoes",
-                    "nameClean": "tomato",
-                    "original": "5 large ripe tomatoes",
-                    "originalName": "ripe tomatoes",
-                    "amount": 5.0,
-                    "unit": "large",
-                    "meta": [
-                        "ripe"
-                    ],
-                    "measures": {
-                        "us": {
-                            "amount": 5.0,
-                            "unitShort": "large",
-                            "unitLong": "larges"
-                        },
-                        "metric": {
-                            "amount": 5.0,
-                            "unitShort": "large",
-                            "unitLong": "larges"
-                        }
-                    }
+              {
+                "id": 1001,
+                "aisle": "Poultry",
+                "image": "chicken-breast.jpg",
+                "consistency": "SOLID",
+                "name": "chicken breast",
+                "nameClean": "chicken breast",
+                "original": "Chicken Breast - 2 cups, diced",
+                "originalName": "Chicken Breast - 2 cups, diced",
+                "amount": 2.0,
+                "unit": "cups",
+                "meta": ["diced"],
+                "measures": {
+                  "us": {
+                    "amount": 2.0,
+                    "unitShort": "cups",
+                    "unitLong": "cups"
+                  },
+                  "metric": {
+                    "amount": 473.18,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                  }
                 }
+              },
+              {
+                "id": 1123,
+                "aisle": "Milk, Eggs, Other Dairy",
+                "image": "heavy-cream.jpg",
+                "consistency": "LIQUID",
+                "name": "heavy cream",
+                "nameClean": "heavy cream",
+                "original": "Heavy Cream - 1 cup",
+                "originalName": "Heavy Cream - 1 cup",
+                "amount": 1.0,
+                "unit": "cup",
+                "meta": [],
+                "measures": {
+                  "us": {
+                    "amount": 1.0,
+                    "unitShort": "cup",
+                    "unitLong": "cup"
+                  },
+                  "metric": {
+                    "amount": 236.59,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                  }
+                }
+              }
             ],
-            "id": 645348,
-            "title": "Duck",
-            "readyInMinutes": 15,
+            "id": 123456,
+            "title": "Creamy Chicken Pasta",
+            "readyInMinutes": 45,
             "servings": 4,
-            "sourceUrl": "http://www.foodista.com/recipe/QZ2D5V6N/greek-salad",
-            "image": "https://spoonacular.com/recipeImages/645348-556x370.jpg",
+            "calories": 600,
+            "fat": 30,
+            "satFat": 15,
+            "carbs": 50,
+            "fiber": 3,
+            "protein": 35,
+            "sugar": 2,
+            "sourceUrl": "https://www.deliciousrecipes.com/creamy-chicken",
+            "image": "https://spoonacular.com/recipeImages/123456-556x370.jpg",
             "imageType": "jpg",
-            "summary": "Greek Side Salad is a hor d'oeuvre that serves 4. Watching your figure? This gluten free, lacto ovo vegetarian, and primal recipe has <b>277 calories</b>, <b>7g of protein</b>, and <b>23g of fat</b> per serving. For <b>$1.9 per serving</b>, this recipe <b>covers 15%</b> of your daily requirements of vitamins and minerals. Only a few people made this recipe, and 3 would say it hit the spot. It is brought to you by Foodista. A mixture of cucumber, extra virgin olive oil, tomatoes, and a handful of other ingredients are all it takes to make this recipe so flavorful. From preparation to the plate, this recipe takes approximately <b>15 minutes</b>. This recipe is typical of Mediterranean cuisine. All things considered, we decided this recipe <b>deserves a spoonacular score of 74%</b>. This score is good. Similar recipes include <a href=\"https://spoonacular.com/recipes/fashoulakia-greek-green-bean-side-dish-1201327\">Fashoulakia (Greek Green Bean Side Dish)</a>, <a href=\"https://spoonacular.com/recipes/fashoulakia-greek-green-bean-side-dish-666613\">Fashoulakia (Greek Green Bean Side Dish)</a>, and <a href=\"https://spoonacular.com/recipes/horiatiki-greek-salad-traditional-farmers-greek-salad-1751887\">Horiatiki Greek Salad (Traditional Farmer's Greek Salad)</a>.",
+            "summary": "Enjoy a delicious and creamy chicken dish that's perfect for any occasion. This recipe is gluten-free and packed with flavor.",
             "cuisines": [
-                "Mediterranean",
-                "European",
-                "Greek"
+              "American",
+              "Italian"
             ],
             "dishTypes": [
-                "side dish",
-                "antipasti",
-                "salad",
-                "starter",
-                "snack",
-                "appetizer",
-                "antipasto",
-                "hor d'oeuvre"
+              "main course"
             ],
             "diets": [
-                "gluten free",
-                "lacto ovo vegetarian",
-                "primal"
+              "gluten free"
             ],
-            "occasions": [],
-            "instructions": "<ol><li> Slice the vegetables into bite-size wedges</li><li>Toss in a bowl with olive oil </li><li>Place feta on top of the salad or break up into crumbles</li></ol>",
+            "occasions": ["family dinner", "special occasion"],
+            "winePairing": {
+              "pairedWines": ["Chardonnay", "Sauvignon Blanc"],
+              "pairingText": "Pair this creamy chicken with a glass of Chardonnay or Sauvignon Blanc for a delightful dining experience.",
+              "productMatches": []
+            },
+            "instructions": "1. In a large skillet, cook the diced chicken breast until browned.\n2. Pour in the heavy cream and let it simmer for 15 minutes.\n3. Season with salt and pepper to taste.\n 4. Cook the Pasta and add salt.\n 5. Add Pasta to the chicken.\n6. Serve hot and enjoy!",
             "analyzedInstructions": [
-                {
-                    "name": "",
-                    "steps": [
+              {
+                "name": "",
+                "steps": [
+                  {
+                    "number": 1,
+                    "step": "In a large skillet, cook the diced chicken breast until browned.",
+                    "ingredients": [
+                      {
+                        "id": 1001,
+                        "name": "chicken breast",
+                        "localizedName": "chicken breast",
+                        "image": "chicken-breast.jpg"
+                      }
+                    ],
+                    "equipment": [
+                      {
+                        "id": 404644,
+                        "name": "skillet",
+                        "localizedName": "skillet",
+                        "image": "skillet.png"
+                      }
+                    ],
+                    "length": {
+                      "number": 10,
+                      "unit": "minutes"
+                    }
+                  },
+                  {
+                    "number": 2,
+                    "step": "Pour in the heavy cream and let it simmer for 15 minutes.",
+                    "ingredients": [
+                      {
+                        "id": 1123,
+                        "name": "heavy cream",
+                        "localizedName": "heavy cream",
+                        "image": "heavy-cream.jpg"
+                      }
+                    ],
+                    "equipment": []
+                  },
+                  {
+                    "number": 3,
+                    "step": "Season with salt and pepper to taste.",
+                    "ingredients": [],
+                    "equipment": []
+                  },
+                  {
+                    "number": 4,
+                    "step": "Cook the Pasta and add salt.",
+                    "ingredients": [],
+                    "equipment": []
+                  },
+                  {
+                    "number": 5,
+                    "step": "5.Add Pasta to the chicken.",
+                    "ingredients": [
                         {
-                            "number": 1,
-                            "step": "Slice the vegetables into bite-size wedges",
-                            "ingredients": [
-                                {
-                                    "id": 11583,
-                                    "name": "vegetable",
-                                    "localizedName": "vegetable",
-                                    "image": "mixed-vegetables.png"
-                                }
-                            ],
-                            "equipment": []
-                        },
+                            "id": 1033,
+                            "name": "penne noodles",
+                            "localizedName": "penne noodles",
+                            "image": "penne.jpg"
+                          }
+                    ],
+                    "equipment": [
                         {
-                            "number": 2,
-                            "step": "Toss in a bowl with olive oil",
-                            "ingredients": [
-                                {
-                                    "id": 4053,
-                                    "name": "olive oil",
-                                    "localizedName": "olive oil",
-                                    "image": "olive-oil.jpg"
-                                }
-                            ],
-                            "equipment": [
-                                {
-                                    "id": 404783,
-                                    "name": "bowl",
-                                    "localizedName": "bowl",
-                                    "image": "bowl.jpg"
-                                }
-                            ]
-                        },
-                        {
-                            "number": 3,
-                            "step": "Place feta on top of the salad or break up into crumbles",
-                            "ingredients": [
-                                {
-                                    "id": 1019,
-                                    "name": "feta cheese",
-                                    "localizedName": "feta cheese",
-                                    "image": "feta.png"
-                                }
-                            ],
-                            "equipment": []
+                        "id": 404645,
+                        "name": "pot",
+                        "localizedName": "pot",
+                        "image": "pot.png"
                         }
                     ]
-                }
+                  },
+                  {
+                    "number": 6,
+                    "step": "Serve hot and enjoy!",
+                    "ingredients": [],
+                    "equipment": []
+                  }
+                ]
+              }
             ],
-            "originalId": null,
-            "spoonacularScore": 76.564697265625,
-            "spoonacularSourceUrl": "https://spoonacular.com/greek-side-salad-645348"
+            "originalId": null
         }
+          
+
     ]
 }

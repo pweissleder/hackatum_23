@@ -19,7 +19,10 @@ struct RecipePreviewView: View {
                     .scaledToFill()
                     .frame(width: 200)
             } placeholder: {
-                
+                Image("placeholder")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 200)
             }
             Text(recipe.title).font(.headline)
                 .padding(5)

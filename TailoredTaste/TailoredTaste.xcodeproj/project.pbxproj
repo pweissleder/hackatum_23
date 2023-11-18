@@ -29,6 +29,7 @@
 		B7E93FEA2B08BF4100430F57 /* RecipePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FE92B08BF4100430F57 /* RecipePreviewView.swift */; };
 		B7E93FED2B08CB8B00430F57 /* NutritionalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */; };
 		B7E93FEE2B08CB8B00430F57 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */; };
+		B7E93FF02B08D5F500430F57 /* IngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEF2B08D5F500430F57 /* IngredientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		B7E93FE92B08BF4100430F57 /* RecipePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePreviewView.swift; sourceTree = "<group>"; };
 		B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionalItemView.swift; sourceTree = "<group>"; };
 		B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		B7E93FEF2B08D5F500430F57 /* IngredientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				B7E93FE92B08BF4100430F57 /* RecipePreviewView.swift */,
 				B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */,
 				B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */,
+				B7E93FEF2B08D5F500430F57 /* IngredientView.swift */,
 				B7E93FE62B0831A400430F57 /* Settings.swift */,
 				B7E93FAF2B0812F100430F57 /* Feed */,
 				B7E93FA42B0812AF00430F57 /* Assets.xcassets */,
@@ -234,6 +237,7 @@
 				0B8957C32B08163000C9B6FE /* Recipe.swift in Sources */,
 				B7E93FB42B08132D00430F57 /* Player.swift in Sources */,
 				B7E93FB72B08150000430F57 /* Video.swift in Sources */,
+				B7E93FF02B08D5F500430F57 /* IngredientView.swift in Sources */,
 				B7E93FED2B08CB8B00430F57 /* NutritionalItemView.swift in Sources */,
 				B7E93FB32B08132D00430F57 /* PlayerView.swift in Sources */,
 				B7E93FE12B082FE000430F57 /* Feed.swift in Sources */,

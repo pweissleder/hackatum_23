@@ -22,7 +22,10 @@ struct RecipeDetailView: View {
                             .resizable()
                             .scaledToFill()
                     } placeholder: {
-                        
+                        Image("placeholder")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 200)
                     }
                     HStack {
                         Spacer()

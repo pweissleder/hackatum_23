@@ -13,7 +13,3 @@ struct HealthKitOnboarding: View {
         
     }
 }
-
-#Preview {
-    HealthKitOnboarding()
-}

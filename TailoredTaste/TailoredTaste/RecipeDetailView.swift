@@ -17,16 +17,7 @@ struct RecipeDetailView: View {
         ScrollView {
             VStack(){
                 ZStack {
-                    AsyncImage(url: URL(string: recipe.image)) { image in
-                        image
-                            .resizable()
-                            .scaledToFill()
-                    } placeholder: {
-                        Image("placeholder")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 200)
-                    }
+                    RecipeImage(recipe: recipe)
                     HStack {
                         Spacer()
                         Button{

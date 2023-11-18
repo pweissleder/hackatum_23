@@ -16,19 +16,17 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: columns, spacing: 30) {
-                    ForEach(dataViewModel.recipes) { recipe in
+                LazyVGrid(columns: columns) {
+                    ForEach(dataViewModel.favouriteRecipes) { recipe in
                         NavigationLink {
                             RecipeDetailView(recipe: recipe)
                         } label: {
                             RecipePreviewView(recipe: recipe)
                         }
-
-                        
                     }
                 }
             }
-            .padding(20)
+            
             .navigationTitle("Hello Benedict")
             .navigationBarTitleDisplayMode(.large)
         }

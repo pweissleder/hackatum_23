@@ -1,6 +1,6 @@
 import Foundation
 import SwiftUI
-
+import AVKit
 
 public class DataViewModel: ObservableObject {
     
@@ -27,7 +27,7 @@ public class DataViewModel: ObservableObject {
                 
                 // Decode JSON data into the Recipe structure
                 let decoder = JSONDecoder()
-                let recipes = try decoder.decode(Recipes.self, from: jsonData)
+                var recipes = try decoder.decode(Recipes.self, from: jsonData)
                 
                 // Now 'recipe' contains the parsed data
                 

@@ -5,6 +5,8 @@ struct Recipes: Codable {
 }
 
 struct Recipe: Codable, Identifiable {
+    var thumbnailName: String?
+    var videoName: String?
     var isFavourite: Bool?
     var cookingEvents: [Date]?
     let vegetarian: Bool
@@ -31,7 +33,7 @@ struct Recipe: Codable, Identifiable {
     let title: String
     let readyInMinutes: Int
     let servings: Int
-    let sourceUrl: String
+    let sourceUrl: String?
     let image: String
     let imageType: String
     let video: String?
@@ -45,7 +47,7 @@ struct Recipe: Codable, Identifiable {
     let analyzedInstructions: [AnalyzedInstruction]
     let originalId: String?
     let spoonacularScore: Float
-    let spoonacularSourceUrl: String
+    let spoonacularSourceUrl: String?
 }
 
 struct Ingredient: Codable {

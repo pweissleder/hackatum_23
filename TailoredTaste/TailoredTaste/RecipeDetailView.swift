@@ -12,10 +12,9 @@ struct RecipeDetailView: View {
     
     let recipe: Recipe
     
+    @ObservedObject var dataViewModel = DataViewModel.shared
+    
     var body: some View {
-        
-        //Image und Label
-        
         ScrollView {
             VStack(){
                 Spacer(minLength: 300)
@@ -27,9 +26,7 @@ struct RecipeDetailView: View {
             }.background(
                 RecipeImage(recipe: recipe, width: nil, height: nil)
             )
-            
-                //Image header
-                
+                            
                 VStack(alignment: .leading) {
                     // Title and quik info Calories, Minm persons
                     Text(recipe.title)
@@ -100,48 +97,35 @@ struct RecipeDetailView: View {
                     }
                     .padding(5)
                     
-                    
-                    
-                    //Ingredients
-                    VStack(alignment: .center, spacing: 10){
-                        HStack {
-                            Spacer()
-                            Text("Ingredients")
-                                .font(.system(.title, design:
-                                        .default))
-                            Spacer()
-                        }
+                    Button {
+                        dataViewModel.markAsCooked(id: recipe.id)
+                    } label: {
+                        Image(systemName: "frying.pan")
                     }
-                    .padding(5)
                     
+                    if let cookedEvents = dataViewModel.cookedMeals[recipe.id], let last = cookedEvents.last {
+                        Text("last cooked at " + last.description)
+                    }
                     
-                    VStack(alignment: .leading) {
-                        ForEach(recipe.extendedIngredients, id: \.id) { ingredient in
-                            HStack {
-                                AsyncImage(url: URL(string: "https://spoonacular.com/cdn/ingredients_100x100/" + ingredient.image)) { image in
-                                    image
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 50, height: 50)
-                                } placeholder: {
-                                    Image("placeholder")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 50, height: 50)
-                                }
-                                Text(ingredient.original)
+
+                    VStack(alignment: .center) {
+                        
+                        LazyVGrid(columns: [.init(), .init(), .init()]) {
+                            ForEach(recipe.extendedIngredients) { ingredient in
+                                IngredientView(ingredient: ingredient)
                             }
                         }
                         
-                        //Instructions
-                        Text("Instructions")
-                            .font(.system(.title, design:
-                                    .default))
-                        Spacer()
-                        
-                        Text(recipe.instructions)
-                        
-                        
+                        ForEach(recipe.analyzedInstructions.first?.steps ?? []) { step in
+                            VStack {
+                                Text(String(step.number))
+                                    .font(.headline)
+                                    .multilineTextAlignment(.center)
+                                    .padding(7)
+                                    .overlay(Circle().stroke(Color.primary, lineWidth: 1))
+                                Text(step.step)
+                            }
+                        }
                     }
                 }
                 .padding(10)

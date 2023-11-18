@@ -44,7 +44,7 @@ struct Recipe: Codable, Identifiable, Equatable {
     let diets: [String]
     let occasions: [String]?
     let instructions: String
-    let analyzedInstructions: [AnalyzedInstruction]?
+    let analyzedInstructions: [AnalyzedInstruction]
     let originalId: String?
     let spoonacularScore: Float
     let spoonacularSourceUrl: String?
@@ -62,7 +62,7 @@ struct Recipe: Codable, Identifiable, Equatable {
     }
 }
 
-struct Ingredient: Codable {
+struct Ingredient: Codable, Identifiable {
     let id: Int
     let aisle: String
     let image: String
@@ -93,10 +93,13 @@ struct MeasureDetails: Codable {
 
 struct AnalyzedInstruction: Codable {
     let name: String
-    let steps: [RecipeStep]?
+    let steps: [RecipeStep]
 }
 
-struct RecipeStep: Codable {
+struct RecipeStep: Codable, Identifiable {
+    var id: Int {
+        number
+    }
     let number: Int
     let step: String
     let ingredients: [RecipeIngredient]?
@@ -104,7 +107,7 @@ struct RecipeStep: Codable {
     let length: RecipeLength?
 }
 
-struct RecipeIngredient: Codable {
+struct RecipeIngredient: Codable, Identifiable {
     let id: Int
     let name: String
     let localizedName: String

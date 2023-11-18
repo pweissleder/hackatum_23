@@ -8,36 +8,39 @@
 import SwiftUI
 
 struct IngredientView: View {
-    var name : String
-    var value : Int
-    var unit : String
-    //var image : Url
+    let ingredient: Ingredient
     
     var body: some View {
-        VStack(alignment: .center, spacing: 10){
+        VStack(alignment: .center){
             
-            Image("Pizza") //Hier Ingredient image
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 2))
+            AsyncImage(url: URL(string: "https://spoonacular.com/cdn/ingredients_100x100/" + ingredient.image)) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+            } placeholder: {
+                Image("placeholder")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+            }
             
-            HStack{
-            Text("Cheese, ")//hier name
-                .font(.footnote)
-                .multilineTextAlignment(TextAlignment.leading)
-                .fixedSize(horizontal: false, vertical: true)
-                .padding(-5)
-            Text("100") //Ingredient amount
+            if ingredient.unit != "" {
+                HStack(spacing: 5){
+                    Text(String(Int(ingredient.amount)))
+                        .font(.footnote)
+                        .lineLimit(1)
+                    Text(ingredient.unit)
+                        .font(.footnote)
+                        .lineLimit(1)
+                }
+                Text(ingredient.nameClean)
                     .font(.footnote)
-                    .multilineTextAlignment(TextAlignment.leading)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .padding(-5)
-            Text("g") //Ingredient Unit
+                    .lineLimit(1)
+            } else {
+                Text(ingredient.originalName)
                     .font(.footnote)
-                    .multilineTextAlignment(TextAlignment.leading)
-                    .fixedSize(horizontal: false, vertical: true)
+                    .lineLimit(2)
             }
         }
         .padding(5)
@@ -46,6 +49,6 @@ struct IngredientView: View {
 
 struct IngredientView_Previews: PreviewProvider {
     static var previews: some View {
-        IngredientView(name: "name", value: 10, unit: "g")
+        IngredientView(ingredient: Ingredient(id: 0, aisle: "", image: "avocado", consistency: "", name: "avocado", nameClean: "", original: "", originalName: "", amount: 500, unit: "g", meta: [], measures: .init(us: .init(amount: 0, unitShort: "", unitLong: ""), metric: .init(amount: 0, unitShort: "", unitLong: ""))))
     }
 }

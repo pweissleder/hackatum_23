@@ -38,8 +38,11 @@ struct PlayerView: View {
                             self.likeOpacity = 0.0
                         }
                     }
-                    .onLongPressGesture {
+                    .onTapGesture {
                         displayRecipeDetail = true
+                    }
+                    .onDisappear() {
+                        playableRecipe.player.pause()
                     }
                     
                     Image(systemName: "heart.fill")

@@ -11,6 +11,7 @@ public class DataViewModel: ObservableObject {
     
     @Published var filteredRecipes: [Recipe] = []
     @Published var favouriteRecipes: [Recipe] = []
+    @Published var cookedMeals: [Int: [Date]] = [:]
     
     init() {
         recipes = getRecipes()
@@ -68,7 +69,6 @@ public class DataViewModel: ObservableObject {
             && ($0.dairyFree == preferences.dairyFree || $0.dairyFree)
             && ($0.peanutFree == preferences.peanutFree || $0.peanutFree ?? true)
         }
-        
     }
     private static func checkDiets(dietsR: [String], dietsP: [String]) -> Bool {
         for dietP in dietsP {
@@ -86,11 +86,9 @@ public class DataViewModel: ObservableObject {
     }
     
     func markAsCooked(id: Int) -> Void {
-        let cookingEvent = Date.now
-        let rIndex = recipes.firstIndex(where: {$0.id == id})!
-        var cookingEvents = recipes[rIndex].cookingEvents ?? []
-        cookingEvents.append(cookingEvent)
-                recipes[rIndex].cookingEvents = cookingEvents
+        var cookedEvents = cookedMeals[id] ?? []
+        cookedEvents.append(Date())
+        cookedMeals[id] = cookedEvents
     }
     
     func addToFavourites(id: Int) {

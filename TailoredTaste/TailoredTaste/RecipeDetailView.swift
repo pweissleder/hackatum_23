@@ -17,16 +17,15 @@ struct RecipeDetailView: View {
         //Image und Label
         
         ScrollView {
-            Spacer(minLength: 50)
             VStack(){
-                Spacer(minLength: 200)
+                Spacer(minLength: 300)
                 HStack{
                     Spacer()
                     LabelView(image:"dollarsign.circle.fill")
                     LabelView(image: "leaf")
                 }.padding(10)
             }.background(
-                RecipeImage(recipe: recipe,width: 500, height: 500)
+                RecipeImage(recipe: recipe, width: nil, height: nil)
             )
             
                 //Image header
@@ -38,39 +37,45 @@ struct RecipeDetailView: View {
                         .fontWeight(.semibold)
                         .font(.system(.title, design: .default))
                         .foregroundColor(Color.black)
-                        .padding(5)
-                    HStack(alignment: .center){
+                        .padding(.horizontal, 5)
+                    
+                    HStack(alignment: .center, spacing: 5){
                         Spacer()
                         VStack{
-                            Image(systemName: "waveform.path.ecg")
+                            Image(systemName: "flame")
                                 .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 45, height: 45)
                                 .foregroundColor(.accentColor)
-                                .frame(width: 50, height: 50)
                                 .scaledToFill()
                             Text("\(String(recipe.calories)) Calories")
                                 .foregroundColor(.secondary)
-                        }
+                        }.padding(.horizontal, 5)
+                        .frame(width: 110)
                         
                         VStack{
-                            Image(systemName: "hourglass")
+                            Image(systemName: "timer.square")
                                 .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 45, height: 45)
                                 .foregroundColor(.accentColor)
-                                .frame(width: 50, height: 50)
                                 .scaledToFill()
                             Text("\(String(recipe.servings)) Minutes")
                                 .foregroundColor(.secondary)
                             
-                        }
+                        }.padding(.horizontal, 5)
+                            .frame(width: 110)
                         VStack{
                             Image(systemName: "person.2")
                                 .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 45, height: 45)
                                 .foregroundColor(.accentColor)
-                                .frame(width: 50, height: 50)
                                 .scaledToFill()
-                                .padding(5)
                             Text("\(String(recipe.servings)) People")
                                 .foregroundColor(.secondary)
-                        }
+                        }.padding(.horizontal, 5)
+                            .frame(width: 110)
                         Spacer()
                     }
                     
@@ -85,6 +90,14 @@ struct RecipeDetailView: View {
                                         .default))
                             Spacer()
                         }
+                        ProgressBarView(currentState: 30, name: "Carbs", finalState: 40, color: .accentColor)
+                        ProgressBarView(currentState: 20, name: "Carbs", finalState: 60, color: .accentColor)
+                        ProgressBarView(currentState: 10, name: "Carbs", finalState: 300, color: .accentColor)
+                        ProgressBarView(currentState: 80, name: "Carbs", finalState: 400, color: .accentColor)
+                        ProgressBarView(currentState: 10, name: "Carbs", finalState: 10, color: .accentColor)
+                        ProgressBarView(currentState: 30, name: "Carbs", finalState: 30, color: .accentColor)
+                        
+                        
                     }
                     .padding(5)
                     

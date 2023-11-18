@@ -14,15 +14,15 @@ struct ContentView: View {
         TabView {
             Feed()
                 .tabItem {
-                    Label("feed", systemImage: "fork.knife")
+                    Label("Recepies", systemImage: "fork.knife")
                 }
             Home()
                 .tabItem {
-                    Label("home", systemImage: "house")
+                    Label("Home", systemImage: "house")
                 }
             Settings()
                 .tabItem {
-                    Label("preferences", systemImage: "slider.horizontal.3")
+                    Label("Preferences", systemImage: "slider.horizontal.3")
                 }
         }
         

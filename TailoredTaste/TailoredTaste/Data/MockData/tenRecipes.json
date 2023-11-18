@@ -373,6 +373,7 @@
             "vegan": true,
             "glutenFree": true,
             "dairyFree": true,
+            "peanutFree": false,
             "veryHealthy": true,
             "cheap": false,
             "veryPopular": true,

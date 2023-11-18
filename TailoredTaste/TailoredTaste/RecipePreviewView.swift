@@ -29,7 +29,7 @@ struct RecipePreviewView: View {
         }
         .background(Color("lightGreen"))
         .cornerRadius(12)
-        .shadow(radius: 4)
+        .shadow(radius: 3)
         .frame(width: 200)
     }
 }

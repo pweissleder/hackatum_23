@@ -9,13 +9,15 @@ import SwiftUI
 
 struct Home: View {
     
+    @ObservedObject var dataViewModel = DataViewModel.shared
+    
     let columns: [GridItem] = [.init(.fixed(200)), .init(.fixed(200))]
 
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(getRecipes()) { recipe in
+                LazyVGrid(columns: columns, spacing: 30) {
+                    ForEach(dataViewModel.recipes) { recipe in
                         NavigationLink {
                             RecipeDetailView(recipe: recipe)
                         } label: {
@@ -26,27 +28,13 @@ struct Home: View {
                     }
                 }
             }
+            .padding(20)
+            .navigationTitle("Hello Benedict")
+            .navigationBarTitleDisplayMode(.large)
         }
-        .navigationTitle("Hello Benedict")
-        .navigationBarTitleDisplayMode(.large)
+        
     }
     
-    func getRecipes() -> [Recipe] {
-        if let fileUrl = Bundle.main.url(forResource: "tenRecipes", withExtension: "json") {
-            do {
-                let jsonData = try Data(contentsOf: fileUrl)
-                let decoder = JSONDecoder()
-                let recipes = try decoder.decode(Recipes.self, from: jsonData)
-                return recipes.recipes
-
-            } catch {
-                print("Error reading or decoding JSON: \(error)")
-            }
-        } else {
-            print("Could not locate the JSON file.")
-        }
-        return []
-    }
 }
 
 struct Home_Previews: PreviewProvider {

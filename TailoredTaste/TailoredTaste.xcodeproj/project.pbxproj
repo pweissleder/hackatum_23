@@ -12,6 +12,7 @@
 		0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8957CD2B08415E00C9B6FE /* tenRecipes.json */; };
 		0B8957D12B08C30200C9B6FE /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957D02B08C30200C9B6FE /* DataViewModel.swift */; };
 		0B8957D32B08E60C00C9B6FE /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957D22B08E60C00C9B6FE /* HealthKitService.swift */; };
+		B78036BB2B094B000030F5EB /* erdnusssosse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B78036BA2B094B000030F5EB /* erdnusssosse.mp4 */; };
 		B7E93FA12B0812AD00430F57 /* TailoredTasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */; };
 		B7E93FA32B0812AD00430F57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA22B0812AD00430F57 /* ContentView.swift */; };
 		B7E93FA52B0812AF00430F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FA42B0812AF00430F57 /* Assets.xcassets */; };
@@ -27,16 +28,15 @@
 		B7E93FED2B08CB8B00430F57 /* NutritionalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */; };
 		B7E93FEE2B08CB8B00430F57 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */; };
 		B7E93FF02B08D5F500430F57 /* IngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FEF2B08D5F500430F57 /* IngredientView.swift */; };
-		F07AF9462B091CB2006F3318 /* HealthKitOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */; };
-		F07AF9482B0924E0006F3318 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9472B0924E0006F3318 /* Nutrition.swift */; };
 		B7E93FF32B08ECE100430F57 /* Kartoffelschalen Chips.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */; };
 		B7E93FF52B08ED3D00430F57 /* RecipeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FF42B08ED3D00430F57 /* RecipeImage.swift */; };
 		B7E93FF72B08F66E00430F57 /* Wunder.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF62B08F66E00430F57 /* Wunder.mp4 */; };
 		B7E93FF92B09071100430F57 /* pasta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF82B09071100430F57 /* pasta.mp4 */; };
 		B7E93FFB2B091C9F00430F57 /* sushi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFA2B091C9F00430F57 /* sushi.mp4 */; };
-		B7E93FFD2B091E6800430F57 /* erdnusssosse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFC2B091E6800430F57 /* erdnusssosse.mp4 */; };
 		B7E93FFF2B0921E500430F57 /* tofuwrap.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */; };
 		BD22C3FF2B09299A00DA8BEE /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22C3FE2B09299A00DA8BEE /* LabelView.swift */; };
+		F07AF9462B091CB2006F3318 /* HealthKitOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */; };
+		F07AF9482B0924E0006F3318 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9472B0924E0006F3318 /* Nutrition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +46,7 @@
 		0B8957D02B08C30200C9B6FE /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
 		0B8957D22B08E60C00C9B6FE /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
 		0B8957D42B08EF5D00C9B6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B78036BA2B094B000030F5EB /* erdnusssosse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = erdnusssosse.mp4; sourceTree = "<group>"; };
 		B7E93F9D2B0812AD00430F57 /* TailoredTaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TailoredTaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailoredTasteApp.swift; sourceTree = "<group>"; };
 		B7E93FA22B0812AD00430F57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,16 +64,15 @@
 		B7E93FEB2B08CB8B00430F57 /* NutritionalItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionalItemView.swift; sourceTree = "<group>"; };
 		B7E93FEC2B08CB8B00430F57 /* RecipeDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		B7E93FEF2B08D5F500430F57 /* IngredientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientView.swift; sourceTree = "<group>"; };
-		F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitOnboarding.swift; sourceTree = "<group>"; };
-		F07AF9472B0924E0006F3318 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 		B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kartoffelschalen Chips.mp4"; sourceTree = "<group>"; };
 		B7E93FF42B08ED3D00430F57 /* RecipeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImage.swift; sourceTree = "<group>"; };
 		B7E93FF62B08F66E00430F57 /* Wunder.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wunder.mp4; sourceTree = "<group>"; };
 		B7E93FF82B09071100430F57 /* pasta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pasta.mp4; sourceTree = "<group>"; };
 		B7E93FFA2B091C9F00430F57 /* sushi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sushi.mp4; sourceTree = "<group>"; };
-		B7E93FFC2B091E6800430F57 /* erdnusssosse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = erdnusssosse.mp4; sourceTree = "<group>"; };
 		B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tofuwrap.mp4; sourceTree = "<group>"; };
 		BD22C3FE2B09299A00DA8BEE /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitOnboarding.swift; sourceTree = "<group>"; };
+		F07AF9472B0924E0006F3318 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,9 +167,9 @@
 				B7E93FA42B0812AF00430F57 /* Assets.xcassets */,
 				B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */,
 				B7E93FF82B09071100430F57 /* pasta.mp4 */,
+				B78036BA2B094B000030F5EB /* erdnusssosse.mp4 */,
 				B7E93FF62B08F66E00430F57 /* Wunder.mp4 */,
 				B7E93FFA2B091C9F00430F57 /* sushi.mp4 */,
-				B7E93FFC2B091E6800430F57 /* erdnusssosse.mp4 */,
 				B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */,
 				B7E93FA62B0812AF00430F57 /* TailoredTaste.entitlements */,
 				B7E93FA72B0812AF00430F57 /* Preview Content */,
@@ -258,10 +258,10 @@
 				B7E93FA92B0812AF00430F57 /* Preview Assets.xcassets in Resources */,
 				B7E93FFB2B091C9F00430F57 /* sushi.mp4 in Resources */,
 				B7E93FA52B0812AF00430F57 /* Assets.xcassets in Resources */,
+				B78036BB2B094B000030F5EB /* erdnusssosse.mp4 in Resources */,
 				0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */,
 				B7E93FF72B08F66E00430F57 /* Wunder.mp4 in Resources */,
 				B7E93FF92B09071100430F57 /* pasta.mp4 in Resources */,
-				B7E93FFD2B091E6800430F57 /* erdnusssosse.mp4 in Resources */,
 				B7E93FFF2B0921E500430F57 /* tofuwrap.mp4 in Resources */,
 				B7E93FF32B08ECE100430F57 /* Kartoffelschalen Chips.mp4 in Resources */,
 			);
@@ -449,8 +449,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.test13123122312312;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = de;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TailoredTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -498,8 +497,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.test13123122312312;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = de;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TailoredTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";

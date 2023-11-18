@@ -28,6 +28,7 @@ struct Feed: View {
             playableRecipes = filteredRecipes.filter { $0.videoName != nil }.map { PlayableRecipe(id: $0.id, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: $0.videoName!, ofType: "mp4")!)), recipe: $0, replay: false)}
         }
         .onAppear {
+            print()
             playableRecipes = DataViewModel.shared.recipes.filter { $0.videoName != nil }.map { PlayableRecipe(id: $0.id, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: $0.videoName!, ofType: "mp4")!)), recipe: $0, replay: false)}
         }
         

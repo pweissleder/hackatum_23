@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct Settings: View {
+    let shared = HealthKitService()
+    @State var textda : Bool = true
     var body: some View {
-        Text("Settings")
+        VStack {
+            Text("Settings").onAppear {
+                print("Peanut: \(DataViewModel.shared.preferences.peanutFree)\n healthy: \(DataViewModel.shared.preferences.veryHealthy)")
+            }
+            Button("Request Permission") {
+                shared.requestPermission()
+            }
+            Button("fetch data") {
+                shared.fetchAllergies()
+                print("Peanut: \(DataViewModel.shared.preferences.peanutFree)\n healthy: \(DataViewModel.shared.preferences.veryHealthy)")
+            }
+            Text("assad").opacity(DataViewModel.shared.preferences.veryHealthy ? 1.0 : 0.1)
+        }
+        
+        
     }
 }
 

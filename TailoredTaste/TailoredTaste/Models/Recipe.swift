@@ -5,6 +5,9 @@ struct Recipes: Codable {
 }
 
 struct Recipe: Codable, Identifiable {
+    
+    let isFavourite: Bool?
+    let cookingEvents: [Date]?
     let vegetarian: Bool
     let vegan: Bool
     let glutenFree: Bool
@@ -32,6 +35,7 @@ struct Recipe: Codable, Identifiable {
     let sourceUrl: String
     let image: String
     let imageType: String
+    let video: String?
     let summary: String
     let cuisines: [String]
     let dishTypes: [String]
@@ -120,3 +124,4 @@ struct RecipeLength: Codable {
     let number: Int
     let unit: String
 }
+

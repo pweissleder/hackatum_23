@@ -26,7 +26,7 @@ struct RecipeDetailView: View {
                     LabelView(image: "leaf")
                 }.padding(10)
             }.background(
-                RecipeImage(recipe: recipe, size: 500)
+                RecipeImage(recipe: recipe,width: 500, height: 500)
             )
             
                 //Image header

@@ -42,7 +42,7 @@ struct RecipeDetailView: View {
                             Image(systemName: "flame")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 45, height: 45)
+                                .frame(width: 30, height: 30)
                                 .foregroundColor(.accentColor)
                                 .scaledToFill()
                             Text("\(String(recipe.calories)) Calories")
@@ -54,7 +54,7 @@ struct RecipeDetailView: View {
                             Image(systemName: "timer.square")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 45, height: 45)
+                                .frame(width: 30, height: 30)
                                 .foregroundColor(.accentColor)
                                 .scaledToFill()
                             Text("\(String(recipe.servings)) Minutes")
@@ -66,7 +66,7 @@ struct RecipeDetailView: View {
                             Image(systemName: "person.2")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 45, height: 45)
+                                .frame(width: 30, height: 30)
                                 .foregroundColor(.accentColor)
                                 .scaledToFill()
                             Text("\(String(recipe.servings)) People")
@@ -75,8 +75,6 @@ struct RecipeDetailView: View {
                             .frame(width: 110)
                         Spacer()
                     }
-                    
-                    
                     
                     // Nutrition
                     VStack(alignment: .center, spacing: 10){
@@ -126,6 +124,7 @@ struct RecipeDetailView: View {
                                 Text(step.step)
                             }
                         }
+                        Spacer(minLength: 150)
                     }
                 }
                 .padding(10)

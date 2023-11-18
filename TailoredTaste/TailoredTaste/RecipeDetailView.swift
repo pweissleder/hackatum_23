@@ -42,7 +42,7 @@ struct RecipeDetailView: View {
                             Image(systemName: "flame")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 45, height: 45)
+                                .frame(width: 30, height: 30)
                                 .foregroundColor(.accentColor)
                                 .scaledToFill()
                             Text("\(String(recipe.calories)) Calories")
@@ -54,7 +54,7 @@ struct RecipeDetailView: View {
                             Image(systemName: "timer.square")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 45, height: 45)
+                                .frame(width: 30, height: 30)
                                 .foregroundColor(.accentColor)
                                 .scaledToFill()
                             Text("\(String(recipe.servings)) Minutes")
@@ -66,7 +66,7 @@ struct RecipeDetailView: View {
                             Image(systemName: "person.2")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 45, height: 45)
+                                .frame(width: 30, height: 30)
                                 .foregroundColor(.accentColor)
                                 .scaledToFill()
                             Text("\(String(recipe.servings)) People")
@@ -76,13 +76,11 @@ struct RecipeDetailView: View {
                         Spacer()
                     }
                     
-                    
-                    
                     // Nutrition
                     VStack(alignment: .center, spacing: 10){
                         HStack {
                             Spacer()
-                            Text("Nutrition")
+                            Text("Ingredients")
                                 .font(.system(.title, design:
                                         .default))
                             Spacer()
@@ -115,6 +113,13 @@ struct RecipeDetailView: View {
                                 IngredientView(ingredient: ingredient)
                             }
                         }
+                        HStack {
+                            Spacer()
+                            Text("Instructions")
+                                .font(.system(.title, design:
+                                        .default))
+                            Spacer()
+                        }
                         
                         ForEach(recipe.analyzedInstructions.first?.steps ?? []) { step in
                             VStack {
@@ -122,10 +127,12 @@ struct RecipeDetailView: View {
                                     .font(.headline)
                                     .multilineTextAlignment(.center)
                                     .padding(7)
-                                    .overlay(Circle().stroke(Color.primary, lineWidth: 1))
+                                    .overlay(Circle().stroke(Color.accentColor, lineWidth: 1))
+                                    .foregroundColor(Color.accentColor)
                                 Text(step.step)
                             }
                         }
+                        Spacer(minLength: 150)
                     }
                 }
                 .padding(10)

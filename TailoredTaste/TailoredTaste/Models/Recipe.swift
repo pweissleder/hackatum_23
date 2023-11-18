@@ -42,9 +42,8 @@ struct Recipe: Codable, Identifiable {
     let dishTypes: [String]
     let diets: [String]
     let occasions: [String]?
-    let winePairing: WinePairing?
     let instructions: String
-    let analyzedInstructions: [AnalyzedInstruction]
+    let analyzedInstructions: [AnalyzedInstruction]?
     let originalId: String?
     let spoonacularScore: Float
     let spoonacularSourceUrl: String?
@@ -84,34 +83,17 @@ struct MeasureDetails: Codable {
     let unitLong: String
 }
 
-struct WinePairing: Codable {
-    let pairedWines: [String]
-    let pairingText: String
-    let productMatches: [ProductMatch]
-}
-
-struct ProductMatch: Codable {
-    let id: Int
-    let title: String
-    let description: String
-    let price: String
-    let imageUrl: String
-    let averageRating: Float
-    let ratingCount: Float
-    let score: Float
-    let link: String
-}
 
 struct AnalyzedInstruction: Codable {
     let name: String
-    let steps: [RecipeStep]
+    let steps: [RecipeStep]?
 }
 
 struct RecipeStep: Codable {
     let number: Int
     let step: String
-    let ingredients: [RecipeIngredient]
-    let equipment: [RecipeEquipment]
+    let ingredients: [RecipeIngredient]?
+    let equipment: [RecipeEquipment]?
     let length: RecipeLength?
 }
 

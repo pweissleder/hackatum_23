@@ -2,6 +2,762 @@
 {
     "recipes": [
         {
+            "thumbnailName": "sushithumbnail",
+            "videoName": "sushi",
+            "vegetarian": false,
+            "vegan": false,
+            "glutenFree": true,
+            "dairyFree": true,
+            "veryHealthy": true,
+            "cheap": false,
+            "veryPopular": true,
+            "sustainable": true,
+            "lowFodmap": false,
+            "weightWatcherSmartPoints": 8,
+            "gaps": "no",
+            "preparationMinutes": 30,
+            "cookingMinutes": 0,
+            "aggregateLikes": 150,
+            "healthScore": 90,
+            "creditsText": "Sushi Lover's Delight",
+            "sourceName": "Sushi Master",
+            "pricePerServing": 5.99,
+            "extendedIngredients": [
+              {
+                "id": 11215,
+                "aisle": "Seafood",
+                "image": "sushi-grade-salmon.jpg",
+                "consistency": "SOLID",
+                "name": "sushi-grade salmon",
+                "nameClean": "sushi-grade salmon",
+                "original": "Sushi-grade salmon – 200g",
+                "originalName": "Sushi-grade salmon – 200g",
+                "amount": 200.0,
+                "unit": "grams",
+                "meta": [],
+                "measures": {
+                  "us": {
+                    "amount": 200.0,
+                    "unitShort": "g",
+                    "unitLong": "grams"
+                  },
+                  "metric": {
+                    "amount": 200.0,
+                    "unitShort": "g",
+                    "unitLong": "grams"
+                  }
+                }
+              },
+              {
+                "id": 11529,
+                "aisle": "Produce",
+                "image": "avocado.jpg",
+                "consistency": "SOLID",
+                "name": "avocado",
+                "nameClean": "avocado",
+                "original": "Avocado – 1, sliced",
+                "originalName": "Avocado – 1, sliced",
+                "amount": 1.0,
+                "unit": "",
+                "meta": [
+                  "sliced"
+                ],
+                "measures": {
+                  "us": {
+                    "amount": 1.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                  },
+                  "metric": {
+                    "amount": 1.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                  }
+                }
+              },
+              {
+                "id": 12179,
+                "aisle": "Ethnic Foods",
+                "image": "seaweed.jpg",
+                "consistency": "SOLID",
+                "name": "seaweed sheets",
+                "nameClean": "seaweed sheets",
+                "original": "Seaweed sheets – 10",
+                "originalName": "Seaweed sheets – 10",
+                "amount": 10.0,
+                "unit": "",
+                "meta": [],
+                "measures": {
+                  "us": {
+                    "amount": 10.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                  },
+                  "metric": {
+                    "amount": 10.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                  }
+                }
+              },
+              {
+                "id": 11282,
+                "aisle": "Produce",
+                "image": "cucumber.jpg",
+                "consistency": "SOLID",
+                "name": "cucumber",
+                "nameClean": "cucumber",
+                "original": "Cucumber – 1, julienned",
+                "originalName": "Cucumber – 1, julienned",
+                "amount": 1.0,
+                "unit": "",
+                "meta": [
+                  "julienned"
+                ],
+                "measures": {
+                  "us": {
+                    "amount": 1.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                  },
+                  "metric": {
+                    "amount": 1.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                  }
+                }
+              },
+              {
+                "id": 2043,
+                "aisle": "Spices and Seasonings",
+                "image": "wasabi.jpg",
+                "consistency": "SOLID",
+                "name": "wasabi",
+                "nameClean": "wasabi",
+                "original": "Wasabi – 2 tablespoons",
+                "originalName": "Wasabi – 2 tablespoons",
+                "amount": 2.0,
+                "unit": "tablespoons",
+                "meta": [],
+                "measures": {
+                  "us": {
+                    "amount": 2.0,
+                    "unitShort": "Tbsps",
+                    "unitLong": "tablespoons"
+                  },
+                  "metric": {
+                    "amount": 2.0,
+                    "unitShort": "Tbsps",
+                    "unitLong": "tablespoons"
+                  }
+                }
+              },
+              {
+                "id": 1022050,
+                "aisle": "Ethnic Foods",
+                "image": "soy-sauce.jpg",
+                "consistency": "LIQUID",
+                "name": "soy sauce",
+                "nameClean": "soy sauce",
+                "original": "Soy sauce – 3 tablespoons",
+                "originalName": "Soy sauce – 3 tablespoons",
+                "amount": 3.0,
+                "unit": "tablespoons",
+                "meta": [],
+                "measures": {
+                  "us": {
+                    "amount": 3.0,
+                    "unitShort": "Tbsps",
+                    "unitLong": "tablespoons"
+                  },
+                  "metric": {
+                    "amount": 3.0,
+                    "unitShort": "Tbsps",
+                    "unitLong": "tablespoons"
+                  }
+                }
+              }
+            ],
+            "id": 700001,
+            "title": "Sushi Delight",
+            "readyInMinutes": 30,
+            "servings": 4,
+            "calories": 250,
+            "fat": 10,
+            "satFat": 2,
+            "carbs": 30,
+            "fiber": 5,
+            "protein": 15,
+            "sugar": 2,
+            "sourceUrl": "http://www.sushiloversdelight.com/sushi-delight/",
+            "image": "https://sushiloversdelight.com/images/sushi-delight.jpg",
+            "imageType": "jpg",
+            "summary": "Indulge in the deliciousness of homemade sushi with this Sushi Delight recipe. Packed with fresh sushi-grade salmon, creamy avocado, and crisp cucumber, it's a delight for sushi lovers. This recipe serves 4 and costs $5.99 per serving. Each serving has 250 calories, 15g of protein, and 10g of healthy fats. For the perfect finish, drizzle with soy sauce and add a kick of wasabi. Enjoy the flavors of Japan in the comfort of your home!",
+            "cuisines": [
+              "Japanese"
+            ],
+            "dishTypes": [
+              "appetizer",
+              "main course"
+            ],
+            "diets": [
+              "gluten free",
+              "dairy free"
+            ],
+            "occasions": [
+              "date night",
+              "party"
+            ],
+            "winePairing": {
+              "pairedWines": [
+                "sake",
+                "pinot noir",
+                "riesling"
+              ],
+              "pairingText": "For a perfect pairing, enjoy this sushi with a glass of sake, pinot noir, or riesling.",
+              "productMatches": [
+                {
+                  "id": 234567,
+                  "title": "Premium Sake",
+                  "description": "A high-quality sake to complement the flavors of sushi.",
+                  "price": 29.99,
+                  "imageUrl": "https://sakepremium.com/images/premium-sake.jpg",
+                  "averageRating": 4.5
+                },
+                {
+                  "id": 345678,
+                  "title": "Pinot Noir Reserve",
+                  "description": "An exquisite pinot noir with notes that enhance sushi enjoyment.",
+                  "price": 39.99,
+                  "imageUrl": "https://pinotnoirreserve.com/images/pinot-noir-reserve.jpg",
+                  "averageRating": 4.8
+                },
+                {
+                  "id": 456789,
+                  "title": "Riesling Elegance",
+                  "description": "A crisp riesling that elevates the sushi experience.",
+                  "price": 24.99,
+                  "imageUrl": "https://rieslingelegance.com/images/riesling-elegance.jpg",
+                  "averageRating": 4.3
+                }
+              ]
+            },
+            "instructions": "1. Lay a sheet of seaweed on a bamboo sushi mat.\n2. Place a thin layer of sushi rice on the seaweed.\n3. Arrange slices of sushi-grade salmon, avocado, and julienned cucumber on the rice.\n4. Drizzle with soy sauce and add wasabi for a kick.\n5. Roll the sushi tightly using the bamboo mat.\n6. Slice the roll into bite-sized pieces.\n7. Serve with additional soy sauce and enjoy!",
+            "analyzedInstructions": [
+              {
+                "name": "",
+                "steps": [
+                  {
+                    "number": 1,
+                    "step": "Lay a sheet of seaweed on a bamboo sushi mat.",
+                    "ingredients": [
+                      {
+                        "id": 12179,
+                        "name": "seaweed sheets",
+                        "localizedName": "seaweed sheets",
+                        "image": "seaweed.jpg"
+                      }
+                    ],
+                    "equipment": [
+                      {
+                        "id": 404647,
+                        "name": "sushi mat",
+                        "localizedName": "sushi mat",
+                        "image": "sushi-mat.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "number": 2,
+                    "step": "Place a thin layer of sushi rice on the seaweed.",
+                    "ingredients": [
+                      {
+                        "id": 11235,
+                        "name": "sushi rice",
+                        "localizedName": "sushi rice",
+                        "image": "sushi-rice.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "number": 3,
+                    "step": "Arrange slices of sushi-grade salmon, avocado, and julienned cucumber on the rice.",
+                    "ingredients": [
+                      {
+                        "id": 11215,
+                        "name": "sushi-grade salmon",
+                        "localizedName": "sushi-grade salmon",
+                        "image": "sushi-grade-salmon.jpg"
+                      },
+                      {
+                        "id": 11529,
+                        "name": "avocado",
+                        "localizedName": "avocado",
+                        "image": "avocado.jpg"
+                      },
+                      {
+                        "id": 11282,
+                        "name": "cucumber",
+                        "localizedName": "cucumber",
+                        "image": "cucumber.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "number": 4,
+                    "step": "Drizzle with soy sauce and add wasabi for a kick.",
+                    "ingredients": [
+                      {
+                        "id": 1022050,
+                        "name": "soy sauce",
+                        "localizedName": "soy sauce",
+                        "image": "soy-sauce.jpg"
+                      },
+                      {
+                        "id": 2043,
+                        "name": "wasabi",
+                        "localizedName": "wasabi",
+                        "image": "wasabi.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "number": 5,
+                    "step": "Roll the sushi tightly using the bamboo mat.",
+                    "equipment": [
+                      {
+                        "id": 404647,
+                        "name": "sushi mat",
+                        "localizedName": "sushi mat",
+                        "image": "sushi-mat.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "number": 6,
+                    "step": "Slice the roll into bite-sized pieces.",
+                    "equipment": [
+                      {
+                        "id": 404647,
+                        "name": "sushi mat",
+                        "localizedName": "sushi mat",
+                        "image": "sushi-mat.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "number": 7,
+                    "step": "Serve with additional soy sauce and enjoy!",
+                    "ingredients": [
+                      {
+                        "id": 1022050,
+                        "name": "soy sauce",
+                        "localizedName": "soy sauce",
+                        "image": "soy-sauce.jpg"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "originalId": null,
+            "spoonacularScore": 92.5487289428711
+          }
+          
+,
+        {
+            "thumbnailName": "duckthumnail",
+            "videoName": "Wunder",
+            "vegetarian": false,
+            "vegan": false,
+            "glutenFree": true,
+            "dairyFree": true,
+            "veryHealthy": false,
+            "cheap": false,
+            "veryPopular": true,
+            "sustainable": true,
+            "lowFodmap": false,
+            "weightWatcherSmartPoints": 8,
+            "gaps": "no",
+            "preparationMinutes": 30,
+            "cookingMinutes": 120,
+            "aggregateLikes": 200,
+            "healthScore": 85,
+            "creditsText": "Duck Lover's Delight",
+            "sourceName": "Duck Master",
+            "pricePerServing": 9.99,
+            "extendedIngredients": [
+              {
+                "id": 20115,
+                "aisle": "Meat",
+                "image": "duck.jpg",
+                "consistency": "SOLID",
+                "name": "duck",
+                "nameClean": "duck",
+                "original": "Whole duck – 1, cleaned and trimmed",
+                "originalName": "Whole duck – 1, cleaned and trimmed",
+                "amount": 1.0,
+                "unit": "",
+                "meta": [],
+                "measures": {
+                  "us": {
+                    "amount": 1.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                  },
+                  "metric": {
+                    "amount": 1.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                  }
+                }
+              },
+              {
+                "id": 11530,
+                "aisle": "Bakery",
+                "image": "flour.jpg",
+                "consistency": "SOLID",
+                "name": "flour",
+                "nameClean": "flour",
+                "original": "All-purpose flour – 2 cups",
+                "originalName": "All-purpose flour – 2 cups",
+                "amount": 2.0,
+                "unit": "cups",
+                "meta": [],
+                "measures": {
+                  "us": {
+                    "amount": 2.0,
+                    "unitShort": "cups",
+                    "unitLong": "cups"
+                  },
+                  "metric": {
+                    "amount": 2.0,
+                    "unitShort": "cups",
+                    "unitLong": "cups"
+                  }
+                }
+              }
+            ],
+            "id": 700002,
+            "title": "Duck Delight",
+            "readyInMinutes": 150,
+            "servings": 4,
+            "calories": 550,
+            "fat": 28,
+            "satFat": 9,
+            "carbs": 40,
+            "fiber": 6,
+            "protein": 30,
+            "sugar": 3,
+            "sourceUrl": "http://www.duckloversdelight.com/duck-dumplings/",
+            "image": "https://duckloversdelight.com/images/duck-dumplings.jpg",
+            "imageType": "jpg",
+            "summary": "Indulge in the savory goodness of Duck Delight with Dumplings. This recipe features a whole duck, cleaned and trimmed, paired with delicious dumplings. With a preparation time of 30 minutes and cooking time of 2 hours, it serves 4 and costs $9.99 per serving. Each serving has 450 calories, 30g of protein, and 20g of flavorful fats. For a delightful experience, pair it with your favorite sauce and enjoy the richness of duck and the comfort of dumplings!",
+            "cuisines": [
+              "International"
+            ],
+            "dishTypes": [
+              "main course"
+            ],
+            "diets": [
+              "gluten free",
+              "dairy free"
+            ],
+            "occasions": [
+              "family dinner",
+              "special occasion"
+            ],
+            "winePairing": {
+              "pairedWines": [
+                "merlot",
+                "cabernet sauvignon",
+                "chardonnay"
+              ],
+              "pairingText": "For a perfect pairing, enjoy this Duck Delight with Dumplings with a glass of merlot, cabernet sauvignon, or chardonnay.",
+              "productMatches": [
+                {
+                  "id": 234568,
+                  "title": "Premium Merlot",
+                  "description": "A high-quality merlot to complement the flavors of duck.",
+                  "price": 34.99,
+                  "imageUrl": "https://merlotpremium.com/images/premium-merlot.jpg",
+                  "averageRating": 4.6
+                },
+                {
+                  "id": 345679,
+                  "title": "Cabernet Sauvignon Reserve",
+                  "description": "An exquisite cabernet sauvignon with notes that enhance the duck experience.",
+                  "price": 44.99,
+                  "imageUrl": "https://cabernetsauvignonreserve.com/images/cabernet-sauvignon-reserve.jpg",
+                  "averageRating": 4.7
+                },
+                {
+                  "id": 456790,
+                  "title": "Chardonnay Elegance",
+                  "description": "A crisp chardonnay that elevates the dumpling experience.",
+                  "price": 29.99,
+                  "imageUrl": "https://chardonnayelegance.com/images/chardonnay-elegance.jpg",
+                  "averageRating": 4.4
+                }
+              ]
+            },
+            "instructions": "1. Preheat the oven to 375°F (190°C).\n2. Season the duck with salt and pepper, then place it in a roasting pan.\n3. Roast the duck for 2 hours or until the skin is crispy and the meat is cooked through.\n4. While the duck is roasting, prepare the dumplings. In a mixing bowl, combine flour and water to form a dough.\n5. Roll out the dough on a floured surface and cut it into small dumpling shapes.\n6. In a separate pot, sauté carrots, celery, onion, and garlic until softened.\n7. Add chicken broth, soy sauce, and sesame oil to the pot and bring to a simmer.\n8. Drop the dumplings into the simmering broth and cook until they float to the surface.\n9. Once the duck is done, carve it into serving portions.\n10. Serve the duck on a plate with dumplings and pour the broth over the top.\n11. Garnish with chopped green onions and serve hot.",
+            "analyzedInstructions": [
+              {
+                "name": "",
+                "steps": [
+                    {
+                        "number": 1,
+                        "step": "Preheat the oven to 375°F (190°C).",
+                        "ingredients": [],
+                        "equipment": [
+                          {
+                            "id": 404649,
+                            "name": "oven",
+                            "localizedName": "oven",
+                            "image": "oven.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "number": 2,
+                        "step": "Season the duck with salt and pepper, then place it in a roasting pan.",
+                        "ingredients": [
+                          {
+                            "id": 20115,
+                            "name": "duck",
+                            "localizedName": "duck",
+                            "image": "duck.jpg"
+                          },
+                          {
+                            "id": 1022030,
+                            "name": "salt",
+                            "localizedName": "salt",
+                            "image": "salt.jpg"
+                          },
+                          {
+                            "id": 1102047,
+                            "name": "pepper",
+                            "localizedName": "pepper",
+                            "image": "pepper.jpg"
+                          }
+                        ],
+                        "equipment": [
+                          {
+                            "id": 404650,
+                            "name": "roasting pan",
+                            "localizedName": "roasting pan",
+                            "image": "roasting-pan.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "number": 3,
+                        "step": "Roast the duck for 2 hours or until the skin is crispy and the meat is cooked through.",
+                        "ingredients": [],
+                        "equipment": [
+                          {
+                            "id": 404650,
+                            "name": "roasting pan",
+                            "localizedName": "roasting pan",
+                            "image": "roasting-pan.jpg"
+                          },
+                          {
+                            "id": 404649,
+                            "name": "oven",
+                            "localizedName": "oven",
+                            "image": "oven.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "number": 4,
+                        "step": "While the duck is roasting, prepare the dumplings. In a mixing bowl, combine flour and water to form a dough.",
+                        "ingredients": [
+                          {
+                            "id": 11282,
+                            "name": "flour",
+                            "localizedName": "flour",
+                            "image": "flour.jpg"
+                          },
+                          {
+                            "id": 14412,
+                            "name": "water",
+                            "localizedName": "water",
+                            "image": "water.jpg"
+                          }
+                        ],
+                        "equipment": [
+                          {
+                            "id": 404651,
+                            "name": "mixing bowl",
+                            "localizedName": "mixing bowl",
+                            "image": "mixing-bowl.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "number": 5,
+                        "step": "Roll out the dough on a floured surface and cut it into small dumpling shapes.",
+                        "ingredients": [
+                          {
+                            "id": 11282,
+                            "name": "flour",
+                            "localizedName": "flour",
+                            "image": "flour.jpg"
+                          }
+                        ],
+                        "equipment": [
+                          {
+                            "id": 404652,
+                            "name": "rolling pin",
+                            "localizedName": "rolling pin",
+                            "image": "rolling-pin.jpg"
+                          },
+                          {
+                            "id": 404653,
+                            "name": "floured surface",
+                            "localizedName": "floured surface",
+                            "image": "floured-surface.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "number": 6,
+                        "step": "In a separate pot, sauté carrots, celery, onion, and garlic until softened.",
+                        "ingredients": [
+                          {
+                            "id": 11124,
+                            "name": "carrots",
+                            "localizedName": "carrots",
+                            "image": "carrots.jpg"
+                          },
+                          {
+                            "id": 11143,
+                            "name": "celery",
+                            "localizedName": "celery",
+                            "image": "celery.jpg"
+                          },
+                          {
+                            "id": 11282,
+                            "name": "onion",
+                            "localizedName": "onion",
+                            "image": "onion.jpg"
+                          },
+                          {
+                            "id": 11215,
+                            "name": "garlic",
+                            "localizedName": "garlic",
+                            "image": "garlic.jpg"
+                          }
+                        ],
+                        "equipment": [
+                          {
+                            "id": 404654,
+                            "name": "pot",
+                            "localizedName": "pot",
+                            "image": "pot.jpg"
+                          },
+                          {
+                            "id": 404655,
+                            "name": "saute pan",
+                            "localizedName": "saute pan",
+                            "image": "saute-pan.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "number": 7,
+                        "step": "Add chicken broth, soy sauce, and sesame oil to the pot and bring to a simmer.",
+                        "ingredients": [
+                          {
+                            "id": 6194,
+                            "name": "chicken broth",
+                            "localizedName": "chicken broth",
+                            "image": "chicken-broth.jpg"
+                          },
+                          {
+                            "id": 1022050,
+                            "name": "soy sauce",
+                            "localizedName": "soy sauce",
+                            "image": "soy-sauce.jpg"
+                          },
+                          {
+                            "id": 4053,
+                            "name": "sesame oil",
+                            "localizedName": "sesame oil",
+                            "image": "sesame-oil.jpg"
+                          }
+                        ],
+                        "equipment": [
+                          {
+                            "id": 404654,
+                            "name": "pot",
+                            "localizedName": "pot",
+                            "image": "pot.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "number": 8,
+                        "step": "Drop the dumplings into the simmering broth and cook until they float to the surface.",
+                        "ingredients": [
+                          {
+                            "id": 11282,
+                            "name": "flour",
+                            "localizedName": "flour",
+                            "image": "flour.jpg"
+                          }
+                        ],
+                        "equipment": [
+                          {
+                            "id": 404654,
+                            "name": "pot",
+                            "localizedName": "pot",
+                            "image": "pot.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "number": 9,
+                        "step": "Once the duck is done, carve it into serving portions.",
+                        "ingredients": [
+                          {
+                            "id": 20115,
+                            "name": "duck",
+                            "localizedName": "duck",
+                            "image": "duck.jpg"
+                          }
+                        ],
+                        "equipment": [
+                          {
+                            "id": 404650,
+                            "name": "roasting pan",
+                            "localizedName": "roasting pan",
+                            "image": "roasting-pan.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "number": 10,
+                        "step": "Serve the duck on a plate with dumplings and pour the broth over the",
+                        "ingredients": [
+                            {
+                                "id": 113234,
+                                "name": "duck",
+                                "localizedName": "duck",
+                                "image": "duck.png"
+                            }
+                        ],
+                        "equipment": []
+                    }
+                ]
+            }
+        ],
+            "originalId": null,
+            "spoonacularScore": 88.5487289428711
+          },
+        {
             "thumbnailName": "potatochips_thumbnail",
             "videoName": "Kartoffelschalen Chips",
             "vegetarian": true,

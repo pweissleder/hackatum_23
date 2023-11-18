@@ -21,9 +21,6 @@
 		B7E93FB42B08132D00430F57 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FB12B08132D00430F57 /* Player.swift */; };
 		B7E93FB52B08132D00430F57 /* PlayerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FB22B08132D00430F57 /* PlayerScrollView.swift */; };
 		B7E93FB72B08150000430F57 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FB62B08150000430F57 /* Video.swift */; };
-		B7E93FDD2B082DF700430F57 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FDA2B082DF600430F57 /* video2.mp4 */; };
-		B7E93FDE2B082DF700430F57 /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FDB2B082DF600430F57 /* video3.mp4 */; };
-		B7E93FDF2B082DF700430F57 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FDC2B082DF700430F57 /* video1.mp4 */; };
 		B7E93FE12B082FE000430F57 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FE02B082FE000430F57 /* Feed.swift */; };
 		B7E93FE52B08318D00430F57 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FE42B08318D00430F57 /* Home.swift */; };
 		B7E93FE72B0831A400430F57 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FE62B0831A400430F57 /* Settings.swift */; };
@@ -35,6 +32,7 @@
 		B7E93FF52B08ED3D00430F57 /* RecipeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FF42B08ED3D00430F57 /* RecipeImage.swift */; };
 		B7E93FF72B08F66E00430F57 /* Wunder.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF62B08F66E00430F57 /* Wunder.mp4 */; };
 		B7E93FF92B09071100430F57 /* pasta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FF82B09071100430F57 /* pasta.mp4 */; };
+		B7E93FFB2B091C9F00430F57 /* sushi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFA2B091C9F00430F57 /* sushi.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,9 +52,6 @@
 		B7E93FB12B08132D00430F57 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B7E93FB22B08132D00430F57 /* PlayerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerScrollView.swift; sourceTree = "<group>"; };
 		B7E93FB62B08150000430F57 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		B7E93FDA2B082DF600430F57 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
-		B7E93FDB2B082DF600430F57 /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
-		B7E93FDC2B082DF700430F57 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
 		B7E93FE02B082FE000430F57 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		B7E93FE42B08318D00430F57 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B7E93FE62B0831A400430F57 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -68,6 +63,7 @@
 		B7E93FF42B08ED3D00430F57 /* RecipeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImage.swift; sourceTree = "<group>"; };
 		B7E93FF62B08F66E00430F57 /* Wunder.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wunder.mp4; sourceTree = "<group>"; };
 		B7E93FF82B09071100430F57 /* pasta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pasta.mp4; sourceTree = "<group>"; };
+		B7E93FFA2B091C9F00430F57 /* sushi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sushi.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,9 +148,7 @@
 				B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */,
 				B7E93FF82B09071100430F57 /* pasta.mp4 */,
 				B7E93FF62B08F66E00430F57 /* Wunder.mp4 */,
-				B7E93FDC2B082DF700430F57 /* video1.mp4 */,
-				B7E93FDA2B082DF600430F57 /* video2.mp4 */,
-				B7E93FDB2B082DF600430F57 /* video3.mp4 */,
+				B7E93FFA2B091C9F00430F57 /* sushi.mp4 */,
 				B7E93FA62B0812AF00430F57 /* TailoredTaste.entitlements */,
 				B7E93FA72B0812AF00430F57 /* Preview Content */,
 			);
@@ -240,16 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E93FA92B0812AF00430F57 /* Preview Assets.xcassets in Resources */,
+				B7E93FFB2B091C9F00430F57 /* sushi.mp4 in Resources */,
 				B7E93FA52B0812AF00430F57 /* Assets.xcassets in Resources */,
 				0B8957C72B0816FF00C9B6FE /* mockedRecipes.js in Resources */,
 				0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */,
 				B7E93FF72B08F66E00430F57 /* Wunder.mp4 in Resources */,
 				0B8957CC2B083C2200C9B6FE /* recipes.json in Resources */,
-				B7E93FDD2B082DF700430F57 /* video2.mp4 in Resources */,
 				B7E93FF92B09071100430F57 /* pasta.mp4 in Resources */,
 				B7E93FF32B08ECE100430F57 /* Kartoffelschalen Chips.mp4 in Resources */,
-				B7E93FDF2B082DF700430F57 /* video1.mp4 in Resources */,
-				B7E93FDE2B082DF700430F57 /* video3.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

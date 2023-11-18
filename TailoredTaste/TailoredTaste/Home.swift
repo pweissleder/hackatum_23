@@ -20,8 +20,7 @@ struct Home: View {
                 LazyVGrid(columns: columns) {
                     ForEach(dataViewModel.favouriteRecipes) { recipe in
                         NavigationLink {
-                            Player(player: getAndStartPlayer(name: recipe.videoName!))
-                                .ignoresSafeArea(.all)
+                            RecipeDetailView(recipe: recipe)
                         } label: {
                             RecipePreviewView(recipe: recipe)
                         }

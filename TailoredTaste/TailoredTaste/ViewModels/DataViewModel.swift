@@ -83,11 +83,8 @@ public class DataViewModel: ObservableObject {
     }
     
     func markAsCooked(id: Int) -> Void {
-        let cookingEvent = Date.now
-        let rIndex = recipes.firstIndex(where: {$0.id == id})!
-        var cookingEvents = recipes[rIndex].cookingEvents ?? []
-        cookingEvents.append(cookingEvent)
-                recipes[rIndex].cookingEvents = cookingEvents
+        let recipe = recipes.first(where: {$0.id == id})!
+        HealthKitService.shared.exportNutritionData(calories: recipe.calories, fat: recipe.fat, satFat: recipe.satFat, carbs: recipe.carbs, fiber: recipe.fiber, protein: recipe.protein, sugar: recipe.sugar)
     }
     
     func addToFavourites(id: Int) {

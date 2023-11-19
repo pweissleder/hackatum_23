@@ -133,7 +133,8 @@ class HealthKitService {
         let sugarType = HKObjectType.quantityType(forIdentifier: .dietarySugar)!
         let carbType = HKObjectType.quantityType(forIdentifier: .dietaryCarbohydrates)!
         
-        //let calorySample = createQuantitySample(for: calorieType, value: calories)
+        
+        let calorieSample = HKQuantitySample(type: calorieType, quantity: HKQuantity(unit: .kilocalorie(), doubleValue: Double(calories)), start: Date(), end: Date())
         let proteinSample = createQuantitySample(for: proteinType, value: protein)
         let totalFatSample = createQuantitySample(for: fatType, value: fat)
         let saturatedFatSample = createQuantitySample(for: satFatType, value: satFat)
@@ -142,10 +143,10 @@ class HealthKitService {
         let carbSample = createQuantitySample(for: carbType, value: carbs)
         
         
-        return [proteinSample, totalFatSample, saturatedFatSample, fiberSample, sugarSample, carbSample]
+        return [proteinSample, totalFatSample, saturatedFatSample, fiberSample, sugarSample, carbSample, calorieSample]
     }
     
     private func createQuantitySample(for type: HKQuantityType, value: Int) -> HKQuantitySample {
-        return HKQuantitySample(type: type, quantity: HKQuantity(unit: .gram(), doubleValue: Double(value)), start: Date.now, end: Date.now)
+        return HKQuantitySample(type: type, quantity: HKQuantity(unit: .gram(), doubleValue: Double(value)), start: Date(), end: Date())
     }
 }

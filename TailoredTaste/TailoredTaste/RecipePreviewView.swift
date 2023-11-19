@@ -17,6 +17,9 @@ struct RecipePreviewView: View {
             Text(recipe.title)
                 .font(.headline)
                 .padding(8)
+                .frame(height: 40)
+                .background(Rectangle().background(Color.red).cornerRadius(20))
+                .cornerRadius(40)
         }
         .background(.white)
         .cornerRadius(12)

@@ -36,9 +36,9 @@
 		B7E93FFF2B0921E500430F57 /* tofuwrap.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */; };
 		BD22C3FF2B09299A00DA8BEE /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22C3FE2B09299A00DA8BEE /* LabelView.swift */; };
 		BDC2A79C2B095B4700778A53 /* erdnusssosse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDC2A79B2B095B4700778A53 /* erdnusssosse.mp4 */; };
+		F06C922D2B094E5C00943521 /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C922C2B094E5C00943521 /* Diet.swift */; };
 		BDC2A79E2B09614000778A53 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2A79D2B09614000778A53 /* ProgressBarView.swift */; };
 		F07AF9462B091CB2006F3318 /* HealthKitOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */; };
-		F07AF9482B0924E0006F3318 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9472B0924E0006F3318 /* Nutrition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,9 +74,9 @@
 		B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tofuwrap.mp4; sourceTree = "<group>"; };
 		BD22C3FE2B09299A00DA8BEE /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		BDC2A79B2B095B4700778A53 /* erdnusssosse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = erdnusssosse.mp4; sourceTree = "<group>"; };
+		F06C922C2B094E5C00943521 /* Diet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diet.swift; sourceTree = "<group>"; };
 		BDC2A79D2B09614000778A53 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitOnboarding.swift; sourceTree = "<group>"; };
-		F07AF9472B0924E0006F3318 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 			children = (
 				0B8957C22B08163000C9B6FE /* Recipe.swift */,
 				0B8957C82B081A9C00C9B6FE /* Preferences.swift */,
-				F07AF9472B0924E0006F3318 /* Nutrition.swift */,
+				F06C922C2B094E5C00943521 /* Diet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,6 +290,7 @@
 				B7E93FB32B08132D00430F57 /* PlayerView.swift in Sources */,
 				0B8957D32B08E60C00C9B6FE /* HealthKitService.swift in Sources */,
 				B7E93FE12B082FE000430F57 /* Feed.swift in Sources */,
+				F06C922D2B094E5C00943521 /* Diet.swift in Sources */,
 				B7E93FB52B08132D00430F57 /* PlayerScrollView.swift in Sources */,
 				B7E93FEE2B08CB8B00430F57 /* RecipeDetailView.swift in Sources */,
 				B7E93FF52B08ED3D00430F57 /* RecipeImage.swift in Sources */,
@@ -297,7 +298,6 @@
 				BD22C3FF2B09299A00DA8BEE /* LabelView.swift in Sources */,
 				0B8957C92B081A9C00C9B6FE /* Preferences.swift in Sources */,
 				B7E93FE72B0831A400430F57 /* Settings.swift in Sources */,
-				F07AF9482B0924E0006F3318 /* Nutrition.swift in Sources */,
 				B7E93FE52B08318D00430F57 /* Home.swift in Sources */,
 				B7E93FA12B0812AD00430F57 /* TailoredTasteApp.swift in Sources */,
 				B7E93FEA2B08BF4100430F57 /* RecipePreviewView.swift in Sources */,

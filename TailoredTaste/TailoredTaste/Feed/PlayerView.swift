@@ -13,14 +13,15 @@ import AVKit
 struct PlayerView: View {
     
     @Binding var playableRecipes: [PlayableRecipe]
-    
+    @State var selected: Int = 0
     
     var body: some View{
-        
-        VStack(spacing: 0){
-            
-            ForEach(playableRecipes){ playableRecipe in
-                SinglePlayerView(playableRecipe: playableRecipe)
+        ZStack {
+            VStack(spacing: 0){
+                
+                ForEach(playableRecipes){ playableRecipe in
+                    SinglePlayerView(playableRecipe: playableRecipe)
+                }
             }
         }
         .onAppear() {

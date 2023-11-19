@@ -15,6 +15,18 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView {
+                Spacer().frame(height: 70)
+                ZStack{
+                    ProgressBarView(currentState: 450 , name: "Daily Calories", finalState: 2200, color: .accentColor)
+                        
+                }
+                HStack {
+                    Text("Favorites")
+                        .bold()
+                        .padding(.horizontal, 10)
+                        .font(.title)
+                        Spacer()
+                }
                 LazyVGrid(columns: [.init(), .init()]) {
                     ForEach(dataViewModel.favouriteRecipes) { recipe in
                         NavigationLink {
@@ -26,9 +38,9 @@ struct Home: View {
                     }
                 }
             }
-            .padding(10)
+            .padding(.horizontal, 10)
             .navigationBarTitleDisplayMode(.large)
-            .navigationTitle("Back")
+            .navigationTitle("Hey Benedict 👋🏼")
         }
         
     }

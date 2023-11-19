@@ -2026,7 +2026,369 @@
               }
             ],
             "originalId": null
-        }
+        },
+        {
+            "thumbnailName": "burgertn",
+            "videoName": "burger",
+            "vegetarian": false,
+            "vegan": false,
+            "glutenFree": false,
+            "dairyFree": false,
+            "veryHealthy": false,
+            "cheap": false,
+            "veryPopular": true,
+            "sustainable": false,
+            "lowFodmap": false,
+            "weightWatcherSmartPoints": 15,
+            "gaps": "no",
+            "preparationMinutes": 15,
+            "cookingMinutes": 10,
+            "aggregateLikes": 10,
+            "healthScore": 75,
+            "creditsText": "SmashBurger Delights",
+            "sourceName": "SmashBurger Delights",
+            "pricePerServing": 5.99,
+            "extendedIngredients": [
+               {
+                  "id": 19237,
+                  "aisle": "Produce",
+                  "image": "fresh-ground-beef.jpg",
+                  "consistency": "SOLID",
+                  "name": "ground beef",
+                  "nameClean": "ground beef",
+                  "original": "Ground beef - 1.5 pounds",
+                  "originalName": "Ground beef - 1.5 pounds",
+                  "amount": 1.5,
+                  "unit": "pounds",
+                  "meta": [],
+                  "measures": {
+                     "us": {
+                        "amount": 1.5,
+                        "unitShort": "lbs",
+                        "unitLong": "pounds"
+                     },
+                     "metric": {
+                        "amount": 680.4,
+                        "unitShort": "g",
+                        "unitLong": "grams"
+                     }
+                  }
+               },
+               {
+                  "id": 11282,
+                  "aisle": "Produce",
+                  "image": "red-onion.jpg",
+                  "consistency": "SOLID",
+                  "name": "onion",
+                  "nameClean": "onion",
+                  "original": "Onion - 1, finely chopped",
+                  "originalName": "Onion - 1, finely chopped",
+                  "amount": 1.0,
+                  "unit": "",
+                  "meta": [
+                     "finely chopped"
+                  ],
+                  "measures": {
+                     "us": {
+                        "amount": 1.0,
+                        "unitShort": "",
+                        "unitLong": ""
+                     },
+                     "metric": {
+                        "amount": 1.0,
+                        "unitShort": "",
+                        "unitLong": ""
+                     }
+                  }
+               },
+               {
+                  "id": 1022050,
+                  "aisle": "Condiments",
+                  "image": "ketchup.jpg",
+                  "consistency": "LIQUID",
+                  "name": "ketchup",
+                  "nameClean": "ketchup",
+                  "original": "Ketchup - 2 tablespoons",
+                  "originalName": "Ketchup - 2 tablespoons",
+                  "amount": 2.0,
+                  "unit": "tablespoons",
+                  "meta": [],
+                  "measures": {
+                     "us": {
+                        "amount": 2.0,
+                        "unitShort": "Tbsps",
+                        "unitLong": "tablespoons"
+                     },
+                     "metric": {
+                        "amount": 2.0,
+                        "unitShort": "Tbsps",
+                        "unitLong": "tablespoons"
+                     }
+                  }
+               },
+               {
+                  "id": 2043,
+                  "aisle": "Spices and Seasonings",
+                  "image": "salt.jpg",
+                  "consistency": "SOLID",
+                  "name": "salt",
+                  "nameClean": "table salt",
+                  "original": "Salt - to taste",
+                  "originalName": "Salt - to taste",
+                  "amount": 1.0,
+                  "unit": "to taste",
+                  "meta": [
+                     "to taste"
+                  ],
+                  "measures": {
+                     "us": {
+                        "amount": 1.0,
+                        "unitShort": "",
+                        "unitLong": ""
+                     },
+                     "metric": {
+                        "amount": 1.0,
+                        "unitShort": "",
+                        "unitLong": ""
+                     }
+                  }
+               },
+               {
+                  "id": 11215,
+                  "aisle": "Produce",
+                  "image": "tomato.jpg",
+                  "consistency": "SOLID",
+                  "name": "tomato",
+                  "nameClean": "tomato",
+                  "original": "Tomato - 3 slices",
+                  "originalName": "Tomato - 3 slices",
+                  "amount": 3.0,
+                  "unit": "slices",
+                  "meta": [],
+                  "measures": {
+                     "us": {
+                        "amount": 3.0,
+                        "unitShort": "slices",
+                        "unitLong": "slices"
+                     },
+                     "metric": {
+                        "amount": 3.0,
+                        "unitShort": "slices",
+                        "unitLong": "slices"
+                     }
+                  }
+               },
+               {
+                  "id": 18371,
+                  "aisle": "Bakery/Bread",
+                  "image": "hamburger-bun.jpg",
+                  "consistency": "SOLID",
+                  "name": "burger buns",
+                  "nameClean": "burger buns",
+                  "original": "Burger buns - 3",
+                  "originalName": "Burger buns - 3",
+                  "amount": 3.0,
+                  "unit": "",
+                  "meta": [],
+                  "measures": {
+                     "us": {
+                        "amount": 3.0,
+                        "unitShort": "",
+                        "unitLong": ""
+                     },
+                     "metric": {
+                        "amount": 3.0,
+                        "unitShort": "",
+                        "unitLong": ""
+                     }
+                  }
+               },
+               {
+                  "id": 19911,
+                  "aisle": "Dairy",
+                  "image": "american-cheese.jpg",
+                  "consistency": "SOLID",
+                  "name": "American cheese slices",
+                  "nameClean": "American cheese slices",
+                  "original": "American cheese slices - 6",
+                  "originalName": "American cheese slices - 6",
+                  "amount": 6.0,
+                  "unit": "",
+                  "meta": [],
+                  "measures": {
+                     "us": {
+                        "amount": 6.0,
+                        "unitShort": "",
+                        "unitLong": ""
+                     },
+                     "metric": {
+                        "amount": 6.0,
+                        "unitShort": "",
+                        "unitLong": ""
+                     }
+                  }
+               },
+               {
+                  "id": 10118375,
+                  "aisle": "Condiments",
+                  "image": "mayonnaise.png",
+                  "consistency": "LIQUID",
+                  "name": "mayonnaise",
+                  "nameClean": "mayonnaise",
+                  "original": "Mayonnaise - 4 tablespoons",
+                  "originalName": "Mayonnaise - 4 tablespoons",
+                  "amount": 4.0,
+                  "unit": "tablespoons",
+                  "meta": [],
+                  "measures": {
+                     "us": {
+                        "amount": 4.0,
+                        "unitShort": "Tbsps",
+                        "unitLong": "tablespoons"
+                     },
+                     "metric": {
+                        "amount": 4.0,
+                        "unitShort": "Tbsps",
+                        "unitLong": "tablespoons"
+                     }
+                  }
+               },
+               {
+                  "id": 1012010,
+                  "aisle": "Produce",
+                  "image": "romaine.jpg",
+                  "consistency": "SOLID",
+                  "name": "lettuce leaves",
+                  "nameClean": "lettuce leaves",
+                  "original": "Lettuce leaves - 6",
+                  "originalName": "Lettuce leaves - 6",
+                  "amount": 6.0,
+                  "unit": "",
+                  "meta": [],
+                  "measures": {
+                     "us": {
+                        "amount": 6.0,
+                        "unitShort": "",
+                        "unitLong": ""
+                     },
+                     "metric": {
+                        "amount": 6.0,
+                        "unitShort": "",
+                        "unitLong": ""
+                     }
+                  }
+               }
+            ],
+            "id": 7005,
+            "title": "Triple Patty Smash Burger",
+            "readyInMinutes": 25,
+            "servings": 3,
+            "calories": 850,
+            "fat": 45,
+            "satFat": 20,
+            "carbs": 60,
+            "fiber": 5,
+            "protein": 60,
+            "sugar": 8,
+            "sourceUrl": "http://www.smashburgerdelights.com/triple-patty-smash-burger/",
+            "image": "https://smashburgerdelights.com/images/triple-patty-smash-burger.jpg",
+            "imageType": "jpg",
+            "summary": "Indulge in the ultimate Triple Patty Smash Burger! This mouthwatering burger features three juicy beef patties, melted American cheese, fresh veggies, and a special sauce, all sandwiched between soft burger buns. It's a burger lover's dream!",
+            "cuisines": [
+                "American"
+             ],
+             "dishTypes": [
+                "main course"
+             ],
+             "diets": [
+                "non-vegetarian"
+             ],
+             "occasions": [
+                "party"
+             ],
+             "winePairing": {
+                "pairedWines": [
+                   "malbec",
+                   "merlot",
+                   "zinfandel"
+                ],
+                "pairingText": "Pair this burger with Malbec, Merlot, or Zinfandel for a delightful dining experience.",
+                "productMatches": [
+                   {
+                      "id": 142,
+                      "title": "Clos La Coutale Cahors",
+                      "description": "Malbec from Cahors, France",
+                      "price": "$21.99",
+                      "imageUrl": "clos-la-coutale-cahors.jpg"
+                   },
+                   {
+                      "id": 96,
+                      "title": "Frontera Merlot",
+                      "description": "SCHMUTZ",
+                      "price": "$7.99",
+                      "imageUrl": "frontera-merlot.jpg"
+                   },
+                   {
+                      "id": 173,
+                      "title": "Ravenswood Old Vine Zinfandel",
+                      "description": "Zinfandel from California, USA",
+                      "price": "$16.99",
+                      "imageUrl": "ravenswood-old-vine-zinfandel.jpg"
+                   }
+                ]
+             },
+             "instructions": "1. Preheat your grill or stovetop griddle to high heat.\n2. Divide the ground beef into nine equal portions and shape them into patties.\n3. Season each patty with salt to taste.\n4. Place the patties on the hot grill or griddle and smash them down with a spatula to create thin, crispy edges.\n5. Cook the patties for about 2-3 minutes on each side or until they reach your desired level of doneness.\n6. In the last minute of cooking, place a slice of American cheese on each patty.\n7. Assemble your burgers by placing three patties with melted cheese on the bottom half of each burger bun.\n8. Add lettuce leaves on top of the patties.\n9. Spread mayonnaise on the top half of the burger buns and place them on top to complete the burgers.\n10. Serve hot and enjoy your delicious triple patty smash burgers!",
+             "analyzedInstructions": [
+                {
+                   "name": "",
+                   "steps": [
+                      {
+                         "number": 1,
+                         "step": "Preheat your grill or stovetop griddle to high heat."
+                      },
+                      {
+                         "number": 2,
+                         "step": "Divide the ground beef into nine equal portions and shape them into patties."
+                      },
+                      {
+                         "number": 3,
+                         "step": "Season each patty with salt to taste."
+                      },
+                      {
+                         "number": 4,
+                         "step": "Place the patties on the hot grill or griddle and smash them down with a spatula to create thin, crispy edges."
+                      },
+                      {
+                         "number": 5,
+                         "step": "Cook the patties for about 2-3 minutes on each side or until they reach your desired level of doneness."
+                      },
+                      {
+                         "number": 6,
+                         "step": "In the last minute of cooking, place a slice of American cheese on each patty."
+                      },
+                      {
+                         "number": 7,
+                         "step": "Assemble your burgers by placing three patties with melted cheese on the bottom half of each burger bun."
+                      },
+                      {
+                         "number": 8,
+                         "step": "Add lettuce leaves on top of the patties."
+                      },
+                      {
+                         "number": 9,
+                         "step": "Spread mayonnaise on the top half of the burger buns and place them on top to complete the burgers."
+                      },
+                      {
+                         "number": 10,
+                         "step": "Serve hot and enjoy your delicious triple patty smash burgers!"
+                      }
+                   ]
+                }
+             ],
+             "originalId": null,
+             "spoonacularScore": 86.72931671142578
+          }
+
           
 
     ]

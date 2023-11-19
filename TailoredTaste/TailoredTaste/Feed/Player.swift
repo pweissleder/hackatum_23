@@ -19,8 +19,10 @@ struct Player: UIViewControllerRepresentable {
         view.player = self.player
         view.showsPlaybackControls = false
         view.videoGravity = .resizeAspectFill
+        
         return view
     }
+
     
     func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
         

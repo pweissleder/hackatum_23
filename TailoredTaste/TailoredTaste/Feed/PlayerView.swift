@@ -15,6 +15,8 @@ struct PlayerView: View {
     @Binding var playableRecipes: [PlayableRecipe]
     @State var selected: Int = 0
     
+    @StateObject private var shakeDetector = ShakeDetector()
+    
     var body: some View{
         ZStack {
             VStack(spacing: 0){
@@ -27,6 +29,9 @@ struct PlayerView: View {
         .onAppear() {
             playableRecipes.first?.player.play()
             playableRecipes.first?.player.actionAtItemEnd = .none
+            shakeDetector.onShake = {
+                DataViewModel.shared.toggleCheatDay()
+            }
         }
     }
 }

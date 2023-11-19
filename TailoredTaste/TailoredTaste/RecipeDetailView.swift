@@ -14,6 +14,8 @@ struct RecipeDetailView: View {
     
     @ObservedObject var dataViewModel = DataViewModel.shared
     
+    @State var isPresented = false
+    
     var body: some View {
         ScrollView {
             VStack(){
@@ -124,16 +126,22 @@ struct RecipeDetailView: View {
                         
                         Button {
                             dataViewModel.markAsCooked(id: recipe.id)
+                            self.isPresented = true
                         } label: {
-                            Image(systemName: "frying.pan")
+                            //Image(systemName: "frying.pan")
+                            Text("Mark as cooked")
+                                .font(.headline)
                         }
-                        .buttonStyle(.bordered)
-                        
+                        .padding(20)
+                        .buttonStyle(.borderedProminent)
+                        .alert(isPresented: $isPresented) {
+                            Alert(title: Text("Sucessfully exported nutrition data to Apple Health"))
+                        }
                         if let cookedEvents = dataViewModel.cookedMeals[recipe.id], let last = cookedEvents.last {
                             Text("last cooked at " + last.description)
                         }
                         
-                        Spacer(minLength: 150)
+                        Spacer(minLength: 80)
                     }
                     
                     

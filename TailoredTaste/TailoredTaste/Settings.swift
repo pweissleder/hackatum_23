@@ -9,7 +9,8 @@ import SwiftUI
 
 struct Settings: View {
     @ObservedObject var viewModel = DataViewModel.shared
-    
+    @State var isPresented = false
+    @State var authorization = false
     var body: some View {
         VStack {
             NavigationView {
@@ -23,25 +24,34 @@ struct Settings: View {
                         }
                     }
                     Section("Integrations"){
-                        Button {
-                            HealthKitService.shared.requestPermission()
-                        } label: {
-                            HStack{
-                                Image("appleHealthIcon")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 25, height: 25)
-                        
-                                Text("Grant Permission")
-                                    .padding(.horizontal,10)
-                                Spacer()
+                        if !authorization {
+                            Button {
+                                HealthKitService.shared.requestPermission()
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                    authorization = true
+                                }
+                                
+                            } label: {
+                                HStack{
+                                    Image("appleHealthIcon")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 25, height: 25)
+                                    
+                                    Text("Grant Permission")
+                                        .padding(.horizontal,10)
+                                    Spacer()
+                                }
                             }
                         }
                         Button {
                             HealthKitService.shared.fetchData()
+                            isPresented = true
                         } label: {
-                            Label("Import Apple Health data", systemImage: "tray.full")
-
+                            Label("Refresh Apple Health data", systemImage: "tray.full")
+                        }
+                        .alert(isPresented: $isPresented) {
+                            Alert(title: Text("Sucessfully imported allergies from Apple Health"))
                         }
                     }
                 }

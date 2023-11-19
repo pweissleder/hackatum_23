@@ -13,6 +13,8 @@
 		0B8957D12B08C30200C9B6FE /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957D02B08C30200C9B6FE /* DataViewModel.swift */; };
 		0B8957D32B08E60C00C9B6FE /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957D22B08E60C00C9B6FE /* HealthKitService.swift */; };
 		B7A935B02B098F9800F0B7E0 /* SinglePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A935AF2B098F9800F0B7E0 /* SinglePlayerView.swift */; };
+		B7A935B22B09FB6D00F0B7E0 /* ShakeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A935B12B09FB6D00F0B7E0 /* ShakeDetector.swift */; };
+		B7A935B42B09FC2000F0B7E0 /* burger.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7A935B32B09FC2000F0B7E0 /* burger.mp4 */; };
 		B7E93FA12B0812AD00430F57 /* TailoredTasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */; };
 		B7E93FA32B0812AD00430F57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA22B0812AD00430F57 /* ContentView.swift */; };
 		B7E93FA52B0812AF00430F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FA42B0812AF00430F57 /* Assets.xcassets */; };
@@ -36,8 +38,8 @@
 		B7E93FFF2B0921E500430F57 /* tofuwrap.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */; };
 		BD22C3FF2B09299A00DA8BEE /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22C3FE2B09299A00DA8BEE /* LabelView.swift */; };
 		BDC2A79C2B095B4700778A53 /* erdnusssosse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDC2A79B2B095B4700778A53 /* erdnusssosse.mp4 */; };
-		F06C922D2B094E5C00943521 /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C922C2B094E5C00943521 /* Diet.swift */; };
 		BDC2A79E2B09614000778A53 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2A79D2B09614000778A53 /* ProgressBarView.swift */; };
+		F06C922D2B094E5C00943521 /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C922C2B094E5C00943521 /* Diet.swift */; };
 		F07AF9462B091CB2006F3318 /* HealthKitOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		0B8957D22B08E60C00C9B6FE /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
 		0B8957D42B08EF5D00C9B6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B7A935AF2B098F9800F0B7E0 /* SinglePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerView.swift; sourceTree = "<group>"; };
+		B7A935B12B09FB6D00F0B7E0 /* ShakeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetector.swift; sourceTree = "<group>"; };
+		B7A935B32B09FC2000F0B7E0 /* burger.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = burger.mp4; sourceTree = "<group>"; };
 		B7E93F9D2B0812AD00430F57 /* TailoredTaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TailoredTaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailoredTasteApp.swift; sourceTree = "<group>"; };
 		B7E93FA22B0812AD00430F57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,8 +78,8 @@
 		B7E93FFE2B0921E500430F57 /* tofuwrap.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tofuwrap.mp4; sourceTree = "<group>"; };
 		BD22C3FE2B09299A00DA8BEE /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		BDC2A79B2B095B4700778A53 /* erdnusssosse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = erdnusssosse.mp4; sourceTree = "<group>"; };
-		F06C922C2B094E5C00943521 /* Diet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diet.swift; sourceTree = "<group>"; };
 		BDC2A79D2B09614000778A53 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		F06C922C2B094E5C00943521 /* Diet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diet.swift; sourceTree = "<group>"; };
 		F07AF9452B091CB2006F3318 /* HealthKitOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitOnboarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +174,7 @@
 				B7E93FE62B0831A400430F57 /* Settings.swift */,
 				B7E93FAF2B0812F100430F57 /* Feed */,
 				B7E93FA42B0812AF00430F57 /* Assets.xcassets */,
+				B7A935B32B09FC2000F0B7E0 /* burger.mp4 */,
 				B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */,
 				B7E93FF82B09071100430F57 /* pasta.mp4 */,
 				BDC2A79B2B095B4700778A53 /* erdnusssosse.mp4 */,
@@ -196,6 +201,7 @@
 				B7E93FE02B082FE000430F57 /* Feed.swift */,
 				B7E93FB62B08150000430F57 /* Video.swift */,
 				B7E93FB12B08132D00430F57 /* Player.swift */,
+				B7A935B12B09FB6D00F0B7E0 /* ShakeDetector.swift */,
 				B7E93FB22B08132D00430F57 /* PlayerScrollView.swift */,
 				B7E93FB02B08132D00430F57 /* PlayerView.swift */,
 				B7A935AF2B098F9800F0B7E0 /* SinglePlayerView.swift */,
@@ -267,6 +273,7 @@
 				BDC2A79C2B095B4700778A53 /* erdnusssosse.mp4 in Resources */,
 				0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */,
 				B7E93FF72B08F66E00430F57 /* Wunder.mp4 in Resources */,
+				B7A935B42B09FC2000F0B7E0 /* burger.mp4 in Resources */,
 				B7E93FF92B09071100430F57 /* pasta.mp4 in Resources */,
 				B7E93FFF2B0921E500430F57 /* tofuwrap.mp4 in Resources */,
 				B7E93FF32B08ECE100430F57 /* Kartoffelschalen Chips.mp4 in Resources */,
@@ -284,6 +291,7 @@
 				B7E93FB42B08132D00430F57 /* Player.swift in Sources */,
 				B7E93FB72B08150000430F57 /* Video.swift in Sources */,
 				B7E93FF02B08D5F500430F57 /* IngredientView.swift in Sources */,
+				B7A935B22B09FB6D00F0B7E0 /* ShakeDetector.swift in Sources */,
 				B7A935B02B098F9800F0B7E0 /* SinglePlayerView.swift in Sources */,
 				B7E93FED2B08CB8B00430F57 /* NutritionalItemView.swift in Sources */,
 				BDC2A79E2B09614000778A53 /* ProgressBarView.swift in Sources */,

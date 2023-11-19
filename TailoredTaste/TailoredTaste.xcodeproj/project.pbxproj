@@ -12,6 +12,7 @@
 		0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8957CD2B08415E00C9B6FE /* tenRecipes.json */; };
 		0B8957D12B08C30200C9B6FE /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957D02B08C30200C9B6FE /* DataViewModel.swift */; };
 		0B8957D32B08E60C00C9B6FE /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957D22B08E60C00C9B6FE /* HealthKitService.swift */; };
+		B7A935B02B098F9800F0B7E0 /* SinglePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A935AF2B098F9800F0B7E0 /* SinglePlayerView.swift */; };
 		B7E93FA12B0812AD00430F57 /* TailoredTasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */; };
 		B7E93FA32B0812AD00430F57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA22B0812AD00430F57 /* ContentView.swift */; };
 		B7E93FA52B0812AF00430F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FA42B0812AF00430F57 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		0B8957D02B08C30200C9B6FE /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
 		0B8957D22B08E60C00C9B6FE /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
 		0B8957D42B08EF5D00C9B6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B7A935AF2B098F9800F0B7E0 /* SinglePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerView.swift; sourceTree = "<group>"; };
 		B7E93F9D2B0812AD00430F57 /* TailoredTaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TailoredTaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailoredTasteApp.swift; sourceTree = "<group>"; };
 		B7E93FA22B0812AD00430F57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				B7E93FB12B08132D00430F57 /* Player.swift */,
 				B7E93FB22B08132D00430F57 /* PlayerScrollView.swift */,
 				B7E93FB02B08132D00430F57 /* PlayerView.swift */,
+				B7A935AF2B098F9800F0B7E0 /* SinglePlayerView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				B7E93FB42B08132D00430F57 /* Player.swift in Sources */,
 				B7E93FB72B08150000430F57 /* Video.swift in Sources */,
 				B7E93FF02B08D5F500430F57 /* IngredientView.swift in Sources */,
+				B7A935B02B098F9800F0B7E0 /* SinglePlayerView.swift in Sources */,
 				B7E93FED2B08CB8B00430F57 /* NutritionalItemView.swift in Sources */,
 				BDC2A79E2B09614000778A53 /* ProgressBarView.swift in Sources */,
 				B7E93FB32B08132D00430F57 /* PlayerView.swift in Sources */,

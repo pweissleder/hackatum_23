@@ -19,10 +19,7 @@ struct IngredientView: View {
                     .scaledToFit()
                     .frame(width: 80, height: 80)
             } placeholder: {
-                Image("placeholder")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 80, height: 80)
+                ProgressView()
             }
             
             if ingredient.unit != "" {

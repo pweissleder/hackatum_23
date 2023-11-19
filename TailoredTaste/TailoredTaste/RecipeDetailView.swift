@@ -95,17 +95,6 @@ struct RecipeDetailView: View {
                     }
                     .padding(5)
                     
-                    Button {
-                        dataViewModel.markAsCooked(id: recipe.id)
-                    } label: {
-                        Image(systemName: "frying.pan")
-                    }
-                    
-                    if let cookedEvents = dataViewModel.cookedMeals[recipe.id], let last = cookedEvents.last {
-                        Text("last cooked at " + last.description)
-                    }
-                    
-
                     VStack(alignment: .center) {
                         
                         LazyVGrid(columns: [.init(), .init(), .init()]) {
@@ -132,8 +121,22 @@ struct RecipeDetailView: View {
                                 Text(step.step)
                             }
                         }
+                        
+                        Button {
+                            dataViewModel.markAsCooked(id: recipe.id)
+                        } label: {
+                            Image(systemName: "frying.pan")
+                        }
+                        .buttonStyle(.bordered)
+                        
+                        if let cookedEvents = dataViewModel.cookedMeals[recipe.id], let last = cookedEvents.last {
+                            Text("last cooked at " + last.description)
+                        }
+                        
                         Spacer(minLength: 150)
                     }
+                    
+                    
                 }
                 .padding(10)
             .navigationBarTitleDisplayMode(.inline)

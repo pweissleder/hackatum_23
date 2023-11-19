@@ -33,7 +33,8 @@ struct Home: View {
                             RecipeDetailView(recipe: recipe)
                         } label: {
                             RecipePreviewView(recipe: recipe)
-                                .padding(5)
+                                .padding(10)
+                                
                         }
                     }
                 }

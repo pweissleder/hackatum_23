@@ -14,20 +14,36 @@ struct Settings: View {
         VStack {
             NavigationView {
                 List {
-                    NavigationLink(destination: Diet()) {
-                        Text("Diet")
+                    Section("Personal Information"){
+                        NavigationLink(destination: Diet()) {
+                            Text("Diet")
+                        }
+                        NavigationLink(destination: Allergies(selectedAllergies: viewModel.getAllergies())) {
+                            Text("Allergies")
+                        }
                     }
-                    NavigationLink(destination: Allergies(selectedAllergies: viewModel.getAllergies())) {
-                        Text("Allergies")
+                    Section("Integrations"){
+                        Button {
+                            HealthKitService.shared.requestPermission()
+                        } label: {
+                            HStack{
+                                Image("appleHealthIcon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 25, height: 25)
+                        
+                                Text("Grant Permission")
+                                    .padding(.horizontal,10)
+                                Spacer()
+                            }
+                        }
+                        Button {
+                            HealthKitService.shared.fetchData()
+                        } label: {
+                            Label("Import Apple Health data", systemImage: "tray.full")
+
+                        }
                     }
-                    Button("Grant Permission") {
-                        HealthKitService.shared.requestPermission()
-                    }
-                    
-                    Button("Import Apple Health data") {
-                        HealthKitService.shared.fetchData()
-                    }
-                    
                 }
                 .navigationBarTitle("Settings")
             }
@@ -68,13 +84,12 @@ struct Allergies: View {
                                     Spacer()
                                     if selectedAllergies.contains(allergy) {
                                         Image(systemName: "checkmark")
-                                            .foregroundColor(.blue)
+                                            .foregroundColor(Color.accentColor)
                                     }
                                 }
                             }
                         }
                     }
-                    .padding()
         }
 }
 
@@ -106,7 +121,6 @@ struct Diet: View {
                Toggle("Dairy-Free", isOn: $selectedDiets.dairyFree)
                Toggle("Peanut-Free", isOn: $selectedDiets.peanutFree)
            }
-           .padding()
        }
 }
 

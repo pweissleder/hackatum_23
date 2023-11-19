@@ -34,7 +34,7 @@ struct RecipeDetailView: View {
                         .fontWeight(.semibold)
                         .font(.system(.title, design: .default))
                         .foregroundColor(Color.black)
-                        .padding(.horizontal, 5)
+                        .padding(.horizontal, 20)
                     
                     HStack(alignment: .center, spacing: 5){
                         Spacer()

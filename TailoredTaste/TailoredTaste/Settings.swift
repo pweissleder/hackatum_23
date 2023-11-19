@@ -8,26 +8,42 @@
 import SwiftUI
 
 struct Settings: View {
-    
+    @ObservedObject var viewModel = DataViewModel.shared
     
     var body: some View {
         VStack {
             NavigationView {
                 List {
-                    Section("Diet") {
-                        Diet()
+                    Section("Personal Information"){
+                        NavigationLink(destination: Diet()) {
+                            Text("Diet")
+                        }
+                        NavigationLink(destination: Allergies(selectedAllergies: viewModel.getAllergies())) {
+                            Text("Allergies")
+                        }
                     }
-                    NavigationLink(destination: Allergies(selectedAllergies: DataViewModel.shared.getAllergies())) {
-                        Text("Allergies")
+                    Section("Integrations"){
+                        Button {
+                            HealthKitService.shared.requestPermission()
+                        } label: {
+                            HStack{
+                                Image("appleHealthIcon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 25, height: 25)
+                        
+                                Text("Grant Permission")
+                                    .padding(.horizontal,10)
+                                Spacer()
+                            }
+                        }
+                        Button {
+                            HealthKitService.shared.fetchData()
+                        } label: {
+                            Label("Import Apple Health data", systemImage: "tray.full")
+
+                        }
                     }
-                    Button("Grant Permission") {
-                        HealthKitService.shared.requestPermission()
-                    }
-                    
-                    Button("Import Apple Health data") {
-                        HealthKitService.shared.fetchData()
-                    }
-                    
                 }
                 .navigationBarTitle("Settings")
             }
@@ -37,7 +53,8 @@ struct Settings: View {
 
 struct Allergies: View {
     @State var selectedAllergies: Set<String>
-
+    @ObservedObject var viewModel = DataViewModel.shared
+    
         let allergies = [
             "Milk",
             "Eggs",
@@ -56,8 +73,10 @@ struct Allergies: View {
                             Button(action: {
                                 if selectedAllergies.contains(allergy) {
                                     selectedAllergies.remove(allergy)
+                                    
                                 } else {
                                     selectedAllergies.insert(allergy)
+                                    
                                 }
                             }) {
                                 HStack {
@@ -65,43 +84,44 @@ struct Allergies: View {
                                     Spacer()
                                     if selectedAllergies.contains(allergy) {
                                         Image(systemName: "checkmark")
-                                            .foregroundColor(.blue)
+                                            .foregroundColor(Color.accentColor)
                                     }
                                 }
                             }
                         }
                     }
-                    .padding()
         }
 }
+
 
 
 struct Diet: View {
     let gridItems = Array(repeating: GridItem(.flexible()), count: 2) // Adjust the count as per your layout
 
-        @State private var selectedButtonIndex: Int = 0
+       @State private var selectedButtonIndex: Int?
 
-        var body: some View {
-            LazyVGrid(columns: gridItems, spacing: 10) {
-                ForEach(0..<4) { index in
-                    Button(action: {
-                        // Update the selected button index
-                        selectedButtonIndex = index
-                    }) {
-                        Text("Button \(index + 1)")
-                            .padding()
-                            .background(selectedButtonIndex == index ? Color.gray : Color.white)
-                            .cornerRadius(8)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .stroke(selectedButtonIndex == index ? Color.blue : Color.gray, lineWidth: 2)
-                            )
-                    }
-                    .foregroundColor(selectedButtonIndex == index ? Color.white : Color.blue)
-                }
-            }
-            .padding()
-        }
+    @State private var selectedDiets = Diets()
+
+       struct Diets {
+           var vegetarian = false
+           var vegan = false
+           var pescetarian = false
+           var carnivore = false
+           var glutenFree = false
+           var dairyFree = false
+           var peanutFree = false
+       }
+
+       var body: some View {
+           List {
+               Toggle("Vegetarian", isOn: $selectedDiets.vegetarian)
+               Toggle("Vegan", isOn: $selectedDiets.vegan)
+               Toggle("Pescetarian", isOn: $selectedDiets.pescetarian)
+               Toggle("Gluten-Free", isOn: $selectedDiets.glutenFree)
+               Toggle("Dairy-Free", isOn: $selectedDiets.dairyFree)
+               Toggle("Peanut-Free", isOn: $selectedDiets.peanutFree)
+           }
+       }
 }
 
 struct Settings_Previews: PreviewProvider {

@@ -15,9 +15,19 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                Spacer().frame(height: 70)
+                Spacer().frame(height: 50)
+                    Text("Hey Benedict 👋🏼")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(3)
+                    Text("Welcome Back!")
+                    .font(.title2)
+                        .bold()
+                        .foregroundColor(.accentColor)
+                    
+                Spacer().frame(height: 50)
                 ZStack{
-                    ProgressBarView(currentState: 450 , name: "Daily Calories", finalState: 2200, color: .accentColor)
+                    ProgressBarView(currentState: 450 , name: "Today's Calories", finalState: 2200, color: .accentColor)
                         
                 }
                 HStack {
@@ -27,21 +37,39 @@ struct Home: View {
                         .font(.title)
                         Spacer()
                 }
+                if dataViewModel.favouriteRecipes.isEmpty {
+                    VStack(alignment: .center) {
+                        Spacer().frame(height: 80)
+                        HStack(alignment: .center) {
+                            Spacer()
+                            Text("Select Explore and Discover your Personalized Recipe Recomendations")
+                                .font(.title2)
+                                .bold()
+                                .foregroundColor(.accentColor)
+                                .multilineTextAlignment(.center)
+                                .frame(width:300, height: 200)
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                } else {
                 LazyVGrid(columns: [.init(), .init()]) {
-                    ForEach(dataViewModel.favouriteRecipes) { recipe in
-                        NavigationLink {
-                            RecipeDetailView(recipe: recipe)
-                        } label: {
-                            RecipePreviewView(recipe: recipe)
-                                .padding(10)
+                    
+                        ForEach(dataViewModel.favouriteRecipes) { recipe in
+                            NavigationLink {
+                                RecipeDetailView(recipe: recipe)
+                            } label: {
+                                RecipePreviewView(recipe: recipe)
+                                    .padding(10)
                                 
+                            }
                         }
                     }
                 }
             }
             .padding(.horizontal, 10)
-            .navigationBarTitleDisplayMode(.large)
-            .navigationTitle("Hey Benedict 👋🏼")
+            .navigationBarHidden(true)
+            .navigationTitle("Back")
         }
         
     }

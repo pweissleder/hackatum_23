@@ -14,7 +14,7 @@
 		0B8957D32B08E60C00C9B6FE /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8957D22B08E60C00C9B6FE /* HealthKitService.swift */; };
 		B7A935B02B098F9800F0B7E0 /* SinglePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A935AF2B098F9800F0B7E0 /* SinglePlayerView.swift */; };
 		B7A935B22B09FB6D00F0B7E0 /* ShakeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A935B12B09FB6D00F0B7E0 /* ShakeDetector.swift */; };
-		B7A935B42B09FC2000F0B7E0 /* burger.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7A935B32B09FC2000F0B7E0 /* burger.mp4 */; };
+		B7A935B62B09FE8E00F0B7E0 /* burger.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7A935B52B09FE8E00F0B7E0 /* burger.mp4 */; };
 		B7E93FA12B0812AD00430F57 /* TailoredTasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */; };
 		B7E93FA32B0812AD00430F57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E93FA22B0812AD00430F57 /* ContentView.swift */; };
 		B7E93FA52B0812AF00430F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E93FA42B0812AF00430F57 /* Assets.xcassets */; };
@@ -52,7 +52,7 @@
 		0B8957D42B08EF5D00C9B6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B7A935AF2B098F9800F0B7E0 /* SinglePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerView.swift; sourceTree = "<group>"; };
 		B7A935B12B09FB6D00F0B7E0 /* ShakeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetector.swift; sourceTree = "<group>"; };
-		B7A935B32B09FC2000F0B7E0 /* burger.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = burger.mp4; sourceTree = "<group>"; };
+		B7A935B52B09FE8E00F0B7E0 /* burger.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = burger.mp4; sourceTree = "<group>"; };
 		B7E93F9D2B0812AD00430F57 /* TailoredTaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TailoredTaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E93FA02B0812AD00430F57 /* TailoredTasteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailoredTasteApp.swift; sourceTree = "<group>"; };
 		B7E93FA22B0812AD00430F57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,8 +174,8 @@
 				B7E93FE62B0831A400430F57 /* Settings.swift */,
 				B7E93FAF2B0812F100430F57 /* Feed */,
 				B7E93FA42B0812AF00430F57 /* Assets.xcassets */,
-				B7A935B32B09FC2000F0B7E0 /* burger.mp4 */,
 				B7E93FF22B08ECE100430F57 /* Kartoffelschalen Chips.mp4 */,
+				B7A935B52B09FE8E00F0B7E0 /* burger.mp4 */,
 				B7E93FF82B09071100430F57 /* pasta.mp4 */,
 				BDC2A79B2B095B4700778A53 /* erdnusssosse.mp4 */,
 				B7E93FF62B08F66E00430F57 /* Wunder.mp4 */,
@@ -273,7 +273,7 @@
 				BDC2A79C2B095B4700778A53 /* erdnusssosse.mp4 in Resources */,
 				0B8957CE2B08415E00C9B6FE /* tenRecipes.json in Resources */,
 				B7E93FF72B08F66E00430F57 /* Wunder.mp4 in Resources */,
-				B7A935B42B09FC2000F0B7E0 /* burger.mp4 in Resources */,
+				B7A935B62B09FE8E00F0B7E0 /* burger.mp4 in Resources */,
 				B7E93FF92B09071100430F57 /* pasta.mp4 in Resources */,
 				B7E93FFF2B0921E500430F57 /* tofuwrap.mp4 in Resources */,
 				B7E93FF32B08ECE100430F57 /* Kartoffelschalen Chips.mp4 in Resources */,

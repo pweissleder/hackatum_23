@@ -22,12 +22,22 @@ struct Feed: View {
     
     @State var isLoaded = false
     
+    @ObservedObject var dataViewModel = DataViewModel.shared
+    
     var body: some View {
         ZStack {
             PlayerScrollView(data: $playableRecipes)
                 .edgesIgnoringSafeArea(.all)
-        }.onChange(of: DataViewModel.shared.filteredRecipes) { filteredRecipes in
+        }.onChange(of: dataViewModel.filteredRecipes) { filteredRecipes in
+            print("update")
             playableRecipes = filteredRecipes.filter { $0.videoName != nil }.map { PlayableRecipe(id: $0.id, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: $0.videoName!, ofType: "mp4")!)), recipe: $0, replay: false)}
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                print(playableRecipes.first?.recipe.title)
+                playableRecipes.first?.player.seek(to: .zero)
+                playableRecipes.first?.player.play()
+            }
+            
         }
         .onAppear {
             if !isLoaded {

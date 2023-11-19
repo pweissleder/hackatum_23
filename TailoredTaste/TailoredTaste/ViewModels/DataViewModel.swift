@@ -19,6 +19,7 @@ public class DataViewModel: ObservableObject {
     init() {
         recipes = getRecipes()
         updateFavouriteRecipes()
+        updateFilteredRecipes()
     }
     
     func getRecipes() -> [Recipe] {
@@ -55,18 +56,29 @@ public class DataViewModel: ObservableObject {
     
     func updateFilteredRecipes() -> Void {
         if (!preferences.isCheatDay) {
+            
             filteredRecipes = recipes.filter {
                 ($0.veryHealthy == preferences.veryHealthy || $0.veryHealthy)
                 && DataViewModel.checkDiets(dietsR: $0.diets, dietsP: preferences.diets)
+                && ($0.vegetarian == preferences.vegetarian || $0.vegetarian)
+                && ($0.vegan == preferences.vegan || $0.vegan)
+                && ($0.glutenFree == preferences.glutenFree || $0.glutenFree)
+                && ($0.dairyFree == preferences.dairyFree || $0.dairyFree)
+                && ($0.peanutFree == preferences.peanutFree || $0.peanutFree ?? true)
             }
+        } else {
+            /* APP DEMO
+             filteredRecipes = recipes.filter {
+                ($0.vegetarian == preferences.vegetarian || $0.vegetarian)
+                && ($0.vegan == preferences.vegan || $0.vegan)
+                && ($0.glutenFree == preferences.glutenFree || $0.glutenFree)
+                && ($0.dairyFree == preferences.dairyFree || $0.dairyFree)
+                && ($0.peanutFree == preferences.peanutFree || $0.peanutFree ?? true)
+            }*/
+            filteredRecipes = [recipes.first(where: {$0.id == 6969})!, recipes.first(where: {$0.id == 700002})!]
         }
-        filteredRecipes = recipes.filter {
-            ($0.vegetarian == preferences.vegetarian || $0.vegetarian)
-            && ($0.vegan == preferences.vegan || $0.vegan)
-            && ($0.glutenFree == preferences.glutenFree || $0.glutenFree)
-            && ($0.dairyFree == preferences.dairyFree || $0.dairyFree)
-            && ($0.peanutFree == preferences.peanutFree || $0.peanutFree ?? true)
-        }
+        
+        print("filter " + String(filteredRecipes.count))
     }
     private static func checkDiets(dietsR: [String], dietsP: [String]) -> Bool {
         for dietP in dietsP {

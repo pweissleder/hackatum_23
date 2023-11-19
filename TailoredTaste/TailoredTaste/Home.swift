@@ -15,7 +15,12 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                Spacer().frame(height: 50)
+                Spacer().frame(height: 20)
+                 Image("helloFresh")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100, height: 70)
+                
                     Text("Hey Benedict 👋🏼")
                         .font(.largeTitle)
                         .bold()
@@ -24,12 +29,13 @@ struct Home: View {
                     .font(.title2)
                         .bold()
                         .foregroundColor(.accentColor)
-                    
-                Spacer().frame(height: 50)
+                    //Color("lightGreen")
+                Spacer().frame(height: 30)
                 ZStack{
                     ProgressBarView(currentState: 450 , name: "Today's Calories", finalState: 2200, color: .accentColor)
                         
                 }
+                Spacer().frame(height: 20)
                 HStack {
                     Text("Favorites")
                         .bold()
@@ -70,6 +76,7 @@ struct Home: View {
             .padding(.horizontal, 10)
             .navigationBarHidden(true)
             .navigationTitle("Back")
+            .background(Color("beigeBG"))
         }
         
     }

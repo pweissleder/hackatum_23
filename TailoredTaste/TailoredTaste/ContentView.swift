@@ -25,7 +25,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Preferences", systemImage: "slider.horizontal.3")
                 }
-        }
+        }.background(Color("beigeBG"))
     }
 }
 

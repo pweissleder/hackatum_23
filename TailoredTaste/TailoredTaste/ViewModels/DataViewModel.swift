@@ -15,6 +15,7 @@ public class DataViewModel: ObservableObject {
     
     
     
+    
     init() {
         recipes = getRecipes()
         updateFavouriteRecipes()
@@ -99,26 +100,6 @@ public class DataViewModel: ObservableObject {
         updateFavouriteRecipes()
     }
     
-    func updateDiet(diet: DietEnum) {
-        switch diet {
-        case .carnivore:
-            preferences.vegan = true
-            preferences.vegetarian = true
-            preferences.pescetarian = true
-        case .pescetarian:
-            preferences.vegan = true
-            preferences.vegetarian = true
-            preferences.pescetarian = true
-        case .vegetarian:
-            preferences.vegan = true
-            preferences.vegetarian = true
-            preferences.pescetarian = false
-        case .vegan:
-            preferences.vegan = true
-            preferences.vegetarian = false
-            preferences.pescetarian = false
-        }
-    }
     
     func getAllergies() -> Set<String> {
         var allergies: [String] = []
@@ -134,6 +115,20 @@ public class DataViewModel: ObservableObject {
             allergies.append("Peanuts")
         }
         return Set(allergies)
+    }
+    
+    func updateAllergys(allergy: String) {
+        switch allergy {
+        case "Gluten":
+            preferences.glutenFree.toggle()
+        case "Milk":
+            preferences.glutenFree.toggle()
+        case "Peanuts":
+            preferences.glutenFree.toggle()
+            print(preferences.glutenFree)
+        default:
+            print("unknown allergy \(allergy)")
+        }
     }
     
     

@@ -40,6 +40,10 @@ struct SinglePlayerView: View {
             .sheet(isPresented: $displayRecipeDetail) {
                 RecipeDetailView(recipe: playableRecipe.recipe)
             }
+            .onTapGesture {
+                playableRecipe.player.seek(to: .zero)
+                playableRecipe.player.play()
+            }
             
             
             Image(systemName: "heart.fill")

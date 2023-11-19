@@ -75,7 +75,7 @@ public class DataViewModel: ObservableObject {
                 && ($0.dairyFree == preferences.dairyFree || $0.dairyFree)
                 && ($0.peanutFree == preferences.peanutFree || $0.peanutFree ?? true)
             }*/
-            filteredRecipes = [recipes.first(where: {$0.id == 6969})!, recipes.first(where: {$0.id == 700002})!]
+            filteredRecipes = [recipes.first(where: {$0.id == 6969})!]
         }
         
         print("filter " + String(filteredRecipes.count))

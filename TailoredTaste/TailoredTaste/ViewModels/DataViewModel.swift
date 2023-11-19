@@ -6,16 +6,17 @@ public class DataViewModel: ObservableObject {
     
     static let shared = DataViewModel()
     
-    @Published var preferences: Preferences = Preferences(isCheatDay: false, vegetarian: false, vegan: false, glutenFree: false, dairyFree: false, peanutFree: true, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
+    @Published var preferences: Preferences = Preferences(isCheatDay: false, vegetarian: false, vegan: false, pescetarian: false, carnivore: true, glutenFree: false, dairyFree: false, peanutFree: true, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
     @Published var recipes: [Recipe] = []
     
     @Published var filteredRecipes: [Recipe] = []
     @Published var favouriteRecipes: [Recipe] = []
     @Published var cookedMeals: [Int: [Date]] = [:]
     
+    
+    
     init() {
         recipes = getRecipes()
-        preferences = initPreferences()
         updateFavouriteRecipes()
     }
     
@@ -44,10 +45,6 @@ public class DataViewModel: ObservableObject {
             print("Could not locate the JSON file.")
         }
         return []
-    }
-    
-    func initPreferences() -> Preferences {
-        return Preferences(isCheatDay: false, vegetarian: false, vegan: false, glutenFree: false, dairyFree: false, peanutFree: false, veryHealthy: false, cheap: false, veryPopular: false, sustainable: false, cuisines: [], diets: [])
     }
     
     func updateFavouriteRecipes() -> Void {
@@ -86,9 +83,8 @@ public class DataViewModel: ObservableObject {
     }
     
     func markAsCooked(id: Int) -> Void {
-        var cookedEvents = cookedMeals[id] ?? []
-        cookedEvents.append(Date())
-        cookedMeals[id] = cookedEvents
+        let recipe = recipes.first(where: {$0.id == id})!
+        HealthKitService.shared.exportNutritionData(calories: recipe.calories, fat: recipe.fat, satFat: recipe.satFat, carbs: recipe.carbs, fiber: recipe.fiber, protein: recipe.protein, sugar: recipe.sugar)
     }
     
     func addToFavourites(id: Int) {
@@ -102,4 +98,43 @@ public class DataViewModel: ObservableObject {
         recipes[rIndex].isFavourite = false
         updateFavouriteRecipes()
     }
+    
+    func updateDiet(diet: DietEnum) {
+        switch diet {
+        case .carnivore:
+            preferences.vegan = true
+            preferences.vegetarian = true
+            preferences.pescetarian = true
+        case .pescetarian:
+            preferences.vegan = true
+            preferences.vegetarian = true
+            preferences.pescetarian = true
+        case .vegetarian:
+            preferences.vegan = true
+            preferences.vegetarian = true
+            preferences.pescetarian = false
+        case .vegan:
+            preferences.vegan = true
+            preferences.vegetarian = false
+            preferences.pescetarian = false
+        }
+    }
+    
+    func getAllergies() -> Set<String> {
+        var allergies: [String] = []
+        if preferences.glutenFree {
+            allergies.append("Gluten")
+        }
+        
+        if preferences.dairyFree {
+            allergies.append("Milk")
+        }
+        
+        if preferences.peanutFree {
+            allergies.append("Peanuts")
+        }
+        return Set(allergies)
+    }
+    
+    
 }

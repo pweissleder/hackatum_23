@@ -36,6 +36,7 @@ struct PlayerView: View {
                         self.likeOpacity = 1.0
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                             self.likeOpacity = 0.0
+                            dataViewModel.markAsCooked(id: playableRecipe.id)
                         }
                     }
                     .onTapGesture {

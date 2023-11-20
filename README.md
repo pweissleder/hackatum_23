@@ -2,6 +2,10 @@
 
 **1st place in the HelloFresh Challange at HackaTUM 2023**
 
+Demo video: [Youtube](https://youtu.be/i1yRlBGizt8)
+Pitch video: Comming soon
+
+
 ## Inspiration
 
 As we thought about intuitive ways of entering sometimes endless lists of dietary requirements and preferences, we recognized that the best solution would be to have none at all! As most of us have already entered all the required data in one or another application, we do not need to repeat that process.

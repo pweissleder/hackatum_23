@@ -49,7 +49,7 @@ To make the gap to the HelloFresh sales model we propose to implement a week pla
 An ML-supported recommendations system could also offer the potential for further improvement of customer satisfaction and product-customer fit.
 
 
-# Reference s& Resourses
+# References& Resources
 
 ### Cooking Video inApp:
 All videos which are used are from Chris Washington, former known as VeganeWunder. Please check him out <a href="[https://www.flaticon.com/free-icons/time](https://youtube.com/@VeganeWunder?si=bQrKGsr9NDuHEzD3)" title="Youtube - Chris Washington">
@@ -90,4 +90,4 @@ Loading bars are inspired by [Amos Gyamfi](https://cindori.com/developer/swiftui
 https://developer.apple.com/health-fitness/ Apple Health FAQ and Troubleshooting – MyFitnessPal Help
 Fitbit-App-Logo transparente PNG - StickPNG  Image by svstudioart on Freepik
 
-Disclamer: Modified readme in comparison to the submission version(see submission_hackatum) and added presentation material
+Disclamer: Modified readme in comparison to the submission version (see branch submission_hackatum) and added presentation material

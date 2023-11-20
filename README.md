@@ -3,7 +3,8 @@
 **1st place in the HelloFresh Challange at HackaTUM 2023**
 
 Demo video: [Youtube](https://youtu.be/i1yRlBGizt8)
-Pitch video: Comming soon
+
+Pitch video: Coming soon
 
 
 ## Inspiration
